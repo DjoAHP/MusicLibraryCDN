@@ -165,7 +165,7 @@ function renderPlayerView(artistId, albumId) {
       <div class="album-section">
         <div id="album-container">
           <div id="${album.projectName}-background">0</div>
-          <div id="${album.projectName}-1plan">3</div>
+          <div id="${album.projectName}-1plan">15</div>
         </div>
 
         <div class="album-info">
@@ -239,7 +239,7 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
 
   // MON LIEN CDN
   const BASE_URL =
-    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@1.1.14/images/";
+    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@1.1.15/images/";
   const generateImageUrl = (name) => `url(${BASE_URL}${cdnPath}/${name}.webp)`;
 
   // Récupère toutes les layers

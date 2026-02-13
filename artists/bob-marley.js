@@ -12,8 +12,10 @@ window.addArtist({
         "https://mymusiclibrary.github.io/bob-marley/1973%20-%20LIVE%20Jam/cover.jpg",
       cdnPath: "Bob%20Marley/live-jam",
       projectName: "live-jam",
+      layers: [{ id: "background", depth: 0 }],
       albumSize: "55em",
       albumOffset: "2em",
+
       tracks: [
         {
           title: "Rastaman Vibration",
