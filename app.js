@@ -239,7 +239,7 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
 
   // MON LIEN CDN
   const BASE_URL =
-    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@1.1.15/images/";
+    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@1.1.16/images/";
   const generateImageUrl = (name) => `url(${BASE_URL}${cdnPath}/${name}.webp)`;
 
   // Récupère toutes les layers
