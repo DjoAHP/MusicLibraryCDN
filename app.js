@@ -165,7 +165,7 @@ function renderPlayerView(artistId, albumId) {
       <div class="album-section">
         <div id="album-container">
           <div id="${album.projectName}-background">0</div>
-          <div id="${album.projectName}-1plan">15</div>
+          <div id="${album.projectName}-1plan">10</div>
         </div>
 
         <div class="album-info">
@@ -197,14 +197,14 @@ function initPlayer() {
   if (!album) return;
 
   // Initialiser l'album 3D
-render3DAlbum(album.cdnPath, album.projectName, {
-  size: "55em",
-  albumOffset: "2em",
-  pageTop: "6em",
-  pageBottom: "6em",
-  albumX: "500px", // horizontal
-  albumY: "300px", // vertical
-});
+  render3DAlbum(album.cdnPath, album.projectName, {
+    size: "55em",
+    albumOffset: "2em",
+    pageTop: "6em",
+    pageBottom: "6em",
+    albumX: "500px", // horizontal
+    albumY: "300px", // vertical
+  });
 
   // Créer la playlist
   setupMusicPlayer(
@@ -239,7 +239,7 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
 
   // MON LIEN CDN
   const BASE_URL =
-    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@1.1.16/images/";
+    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@1.1.23/images/";
   const generateImageUrl = (name) => `url(${BASE_URL}${cdnPath}/${name}.webp)`;
 
   // Récupère toutes les layers

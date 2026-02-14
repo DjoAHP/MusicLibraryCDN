@@ -51,6 +51,7 @@ body {
 .library-header h1 {
     font-size: 3.5rem;
     font-weight: 700;
+    /* COULEUR TITRE ARTIST */
     background: linear-gradient(135deg, #4caf50 0%, #2196f3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -59,6 +60,7 @@ body {
     letter-spacing: -1px;
 }
 
+/* SOUS TITRE PAGE  */
 .subtitle {
     font-size: 1.3rem;
     color: #aaa;
@@ -159,7 +161,7 @@ body {
     transform: translateY(-12px) scale(1.02);
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-    border-color: rgba(76, 175, 80, 0.4);
+    border-color: #9E7FFF;
 }
 
 .card:hover::before {
@@ -410,13 +412,14 @@ body.has-mini-player .page {
     border-radius: 4px;
 }
 
+/* SCROLL BARRE */
 .playlist::-webkit-scrollbar-thumb {
-    background: rgba(76, 175, 80, 0.5);
+    background: #9E7FFF;
     border-radius: 4px;
 }
 
 .playlist::-webkit-scrollbar-thumb:hover {
-    background: rgba(76, 175, 80, 0.7);
+    background: #9E7FFF;
 }
 
 .track-list {
@@ -440,13 +443,13 @@ body.has-mini-player .page {
 .track-list li:hover {
     background: rgba(255, 255, 255, 0.1);
     transform: translateX(8px);
-    border-left-color: #4caf50;
+    border-left-color: #9E7FFF;
 }
 
 .track-list li.active {
-    background: linear-gradient(90deg, rgba(76, 175, 80, 0.25), rgba(76, 175, 80, 0.1));
-    border-left-color: #4caf50;
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
+    background: #9f7fff4b;
+    border-left-color: #9E7FFF;
+    box-shadow: 0 4px 15px #9f7fff44;
 }
 
 .track-number {
@@ -457,7 +460,7 @@ body.has-mini-player .page {
 }
 
 .track-list li.active .track-number {
-    color: #4caf50;
+    color: #9E7FFF;
 }
 
 .track-name {

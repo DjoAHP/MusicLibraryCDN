@@ -313,6 +313,302 @@ window.addArtist({
       ],
     },
     // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: Band of Gypsys-LIVE at the Fillmore :::::::::::::::::::::::
+    {
+      // NOM albums
+      id: "band-of-gypsys-LIVE",
+      // NOM ALBUMS
+      name: "Band of Gypsys LIVE at the Fillmore",
+      //   ANNEE
+      year: "1970",
+      cover:
+        //   COVER ALBUM
+        "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-LIVE%20at%20the%20Fillmore/cover.jpg",
+      // URL ALBUM 3D
+      cdnPath: "Jimi%20Hendrix/band-of-gypsys-LIVE",
+      //   NOM ALBUMS
+      projectName: "band-of-gypsys-LIVE",
+      albumSize: "55em",
+      albumOffset: "2em",
+      tracks: [
+        {
+          title: "Who Knows",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-LIVE%20at%20the%20Fillmore/01%20-%20Who%20Knows.mp3",
+        },
+        {
+          title: "Machine Gun",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-LIVE%20at%20the%20Fillmore/02%20-%20Machine%20Gun.mp3",
+        },
+        {
+          title: "Them Changes",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-LIVE%20at%20the%20Fillmore/03%20-%20Them%20Changes.mp3",
+        },
+        {
+          title: "Hear My Train a-Comin'",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-LIVE%20at%20the%20Fillmore/04%20-%20Hear%20My%20Train%20a-Comin%27.mp3",
+        },
+        {
+          title: "We Gotta Live Together",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-LIVE%20at%20the%20Fillmore/05%20-%20We%20Gotta%20Live%20Together.mp3",
+        },
+      ],
+    },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: Band of Gypsys-STUDIO :::::::::::::::::::::::
+    {
+      // NOM albums
+      id: "band-of-gypsys-STUDIO",
+      // NOM ALBUMS
+      name: "Band of Gypsys STUDIO",
+      //   ANNEE
+      year: "1970",
+      cover:
+        //   COVER ALBUM
+        "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-STUDIO/cover.jpg",
+      // URL ALBUM 3D
+      cdnPath: "Jimi%20Hendrix/band-of-gypsys-STUDIO",
+      //   NOM ALBUMS
+      projectName: "band-of-gypsys-STUDIO",
+      albumSize: "55em",
+      albumOffset: "2em",
+      tracks: [
+        {
+          title: "Power of Soul",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-STUDIO/01%20-%20Power%20of%20Soul.mp3",
+        },
+        {
+          title: "Lover Man",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-STUDIO/02%20-%20Lover%20Man.mp3",
+        },
+        {
+          title: "Room Full Of Mirrors",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-STUDIO/03%20-%20Room%20Full%20Of%20Mirrors.mp3",
+        },
+        {
+          title: "Message to Love",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-STUDIO/04%20-%20Message%20to%20Love.mp3",
+        },
+        {
+          title: "Izabella",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-STUDIO/05%20-%20Izabella.mp3",
+        },
+        {
+          title: "Ezy Rider",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-STUDIO/06%20-%20Ezy%20Rider.mp3",
+        },
+        {
+          title: "Stepping Stone",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-STUDIO/07%20-%20Stepping%20Stone.mp3",
+        },
+        {
+          title: "Earth Blues",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-STUDIO/08%20-%20Earth%20Blues.mp3",
+        },
+        {
+          title: "Burning Desire",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part1/1970%20-%20Band%20of%20Gypsys-STUDIO/09%20-%20Burning%20Desire.mp3",
+        },
+      ],
+    },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: Straight Ahead-Disc1 :::::::::::::::::::::::
+    {
+      // NOM albums
+      id: "straight-ahead-disc1",
+      // NOM ALBUMS
+      name: "Straight Ahead Disc1",
+
+      //   ANNEE
+      year: "1970",
+      cover:
+        //   COVER ALBUM
+        "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/cover.jpg",
+      // URL ALBUM 3D
+      cdnPath: "Jimi%20Hendrix/straight-ahead-Disc1/",
+      //   NOM ALBUMS
+      projectName: "straight-ahead-disc1",
+      albumSize: "55em",
+      albumOffset: "2em",
+      tracks: [
+        {
+          title: "Ezy Ryder",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/01%20-%20Ezy%20Ryder.mp3",
+        },
+        {
+          title: "Room Full Of Mirrors",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/02%20-%20Room%20Full%20Of%20Mirrors.mp3",
+        },
+        {
+          title: "Earth Blues",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/03%20-%20Earth%20Blues.mp3",
+        },
+        {
+          title: "Valleys Of Neptune",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/04%20-%20Valleys%20Of%20Neptune.mp3",
+        },
+        {
+          title: "Straight Ahead",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/05%20-%20Straight%20Ahead.mp3",
+        },
+        {
+          title: "Cherokee Mist",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/06%20-%20Cherokee%20Mist.mp3",
+        },
+        {
+          title: "Freedom",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/07%20-%20Freedom.mp3",
+        },
+        {
+          title: "Astro Man",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/08%20-%20Astro%20Man.mp3",
+        },
+        {
+          title: "Stepping Stone",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/09%20-%20Stepping%20Stone.mp3",
+        },
+        {
+          title: "Izabella",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/10%20-%20Izabella.mp3",
+        },
+        {
+          title: "Drifters Escape",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/11%20-%20Drifters%20Escape.mp3",
+        },
+        {
+          title: "Angel",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/12%20-%20Angel.mp3",
+        },
+        {
+          title: "Bleeding Heart",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/13%20-%20Bleeding%20Heart.mp3",
+        },
+        {
+          title: "Burning Desire",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/14%20-%20Burning%20Desire.mp3",
+        },
+      ],
+    },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: Straight Ahead-Disc2 :::::::::::::::::::::::
+    {
+      // NOM albums
+      id: "straight-ahead-disc2",
+      // NOM ALBUMS
+      name: "Straight Ahead Disc2",
+
+      //   ANNEE
+      year: "1970",
+      cover:
+        //   COVER ALBUM
+        "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/cover.jpg",
+      // URL ALBUM 3D
+      cdnPath: "Jimi%20Hendrix/straight-ahead-Disc2",
+      //   NOM ALBUMS
+      projectName: "straight-ahead-disc2",
+      albumSize: "55em",
+      albumOffset: "2em",
+      tracks: [
+        {
+          title: "Night Bird Flying",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/01%20-%20Night%20Bird%20Flying.mp3",
+        },
+        {
+          title: "Pali Gap",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/02%20-%20Pali%20Gap.mp3",
+        },
+        {
+          title: "Hear My Train a-Comin'",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/03%20-%20Hear%20My%20Train%20a-Comin%27.mp3",
+        },
+        {
+          title: "Lover Man",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/04%20-%20Lover%20Man.mp3",
+        },
+        {
+          title: "Midnight Lightning",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/05%20-%20Midnight%20Lightning.mp3",
+        },
+        {
+          title: "Heaven Has No Sorrow",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/06%20-%20Heaven%20Has%20No%20Sorrow.mp3",
+        },
+        {
+          title: "Send My Love to Linda",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/07%20-%20Send%20My%20Love%20to%20Linda.mp3",
+        },
+        {
+          title: "Drifting",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/08%20-%20Drifting.mp3",
+        },
+        {
+          title: "Come Down Hard on Me",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/09%20-%20Come%20Down%20Hard%20on%20Me.mp3",
+        },
+        {
+          title: "Dolly Dagger",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/10%20-%20Dolly%20Dagger.mp3",
+        },
+        {
+          title: "The New Rising Sun",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc2/11%20-%20The%20New%20Rising%20Sun.mp3",
+        },
+      ],
+    },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: Straight Ahead-Disc3 :::::::::::::::::::::::
+    {
+      // NOM albums
+      id: "straight-ahead-disc3",
+      // NOM ALBUMS
+      name: "Straight Ahead Disc3",
+
+      //   ANNEE
+      year: "1970",
+      cover:
+        //   COVER ALBUM
+        "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc3/cover.jpg",
+      // URL ALBUM 3D
+      cdnPath: "Jimi%20Hendrix/straight-ahead-Disc1",
+      //   NOM ALBUMS
+      projectName: "straight-ahead-disc3",
+      albumSize: "55em",
+      albumOffset: "2em",
+      tracks: [
+        {
+          title: "Power of Soul",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc3/01%20-%20Power%20of%20Soul.mp3",
+        },
+        {
+          title: "Beginning",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc3/02%20-%20Beginning.mp3",
+        },
+        {
+          title: "Message to Love",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc3/03%20-%20Message%20to%20Love.mp3",
+        },
+        {
+          title: "Belly Button Window",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc3/04%20-%20Belly%20Button%20Window.mp3",
+        },
+        {
+          title: "In From the Storm",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc3/05%20-%20In%20From%20the%20Storm.mp3",
+        },
+        {
+          title: "Lonely Avenue",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc3/06%20-%20Lonely%20Avenue.mp3",
+        },
+        {
+          title: "All God's Children",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc3/07%20-%20All%20God%27s%20Children.mp3",
+        },
+        {
+          title: "Machine Gun",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc3/08%20-%20Machine%20Gun.mp3",
+        },
+      ],
+    },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
     // :::::::::::::::::::: The Cry of Love :::::::::::::::::::::::
     {
       // NOM albums
