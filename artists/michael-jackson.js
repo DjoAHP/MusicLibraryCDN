@@ -269,7 +269,7 @@ window.addArtist({
     // :::::::::::::::::::: HIStory Past Present and Future Book I :::::::::::::::::::::::
     {
       // NOM albums
-      id: "history",
+      id: "historym",
       // NOM ALBUMS
       name: "HIStory Past Present and Future Book I",
       //   ANNEE
@@ -280,13 +280,150 @@ window.addArtist({
       // URL ALBUM 3D
       cdnPath: "Michael%20Jackson/historym",
       //   NOM ALBUMS
-      projectName: "history",
+      projectName: "historym",
       albumSize: "55em",
       albumOffset: "2em",
       tracks: [
         {
-          title: "Coldblooded",
-          url: "https://mymusiclibrary.github.io/michael-jackson/1974%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/01%20-%20Coldblooded.mp3",
+          title: "Billie Jean",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/01.%20Billie%20Jean.mp3",
+        },
+        {
+          title: "The Way You Make Me Feel",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/02.%20The%20Way%20You%20Make%20Me%20Feel.mp3",
+        },
+        {
+          title: "Black Or White",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/03.%20Black%20Or%20White.mp3",
+        },
+        {
+          title: "Rock With You",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/04.%20Rock%20With%20You.mp3",
+        },
+        {
+          title: "She's Out Of My Life",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/05.%20She%27s%20Out%20Of%20My%20Life.mp3",
+        },
+        {
+          title: "Bad",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/06.%20Bad.mp3",
+        },
+        {
+          title: "I Just Cant Stop Loving You",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/07.%20I%20Just%20Cant%20Stop%20Loving%20You.mp3",
+        },
+        {
+          title: "Man In The Mirror",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/08.%20Man%20In%20The%20Mirror.mp3",
+        },
+        {
+          title: "Thriller",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/09.%20Thriller.mp3",
+        },
+        {
+          title: "Beat It",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/10.%20Beat%20It.mp3",
+        },
+        {
+          title: "The Girl Is Mine",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/11.%20The%20Girl%20Is%20Mine.mp3",
+        },
+        {
+          title: "Remember The Time",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/12.%20Remember%20The%20Time.mp3",
+        },
+        {
+          title: "Don't Stop 'Til You Get Enough",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/13.%20Don%27t%20Stop%20'Til%20You%20Get%20Enough.mp3",
+        },
+        {
+          title: "Wanna Be Startin' Somethin'",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/14.%20Wanna%20Be%20Startin'%20Somethin'.mp3",
+        },
+        {
+          title: "Heal The World",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20One%20HIStory%20Begins%20Greatest%20Hits%20HIStory%2C%20Volume%20I/15.%20Heal%20The%20World.mp3",
+        },
+      ],
+    },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: HIStory Continues :::::::::::::::::::::::
+    {
+      // NOM albums DOIT ETRE EXACTEMENT COMME LE LIEN
+      id: "historym",
+      // NOM ALBUMS
+      name: "HIStory Continues",
+      //   ANNEE
+      year: "1995",
+      cover:
+        //   COVER ALBUM
+        "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/cover.jpg",
+      // URL ALBUM 3D
+      cdnPath: "Michael%20Jackson/historym",
+      //   NOM ALBUMS
+      projectName: "historym",
+      albumSize: "55em",
+      albumOffset: "2em",
+      tracks: [
+        {
+          title: "Scream",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/01.%20Scream.mp3",
+        },
+        {
+          title: "They Don't Care About Us",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/02.%20They%20Don%27t%20Care%20About%20Us.mp3",
+        },
+        {
+          title: "Stranger In Moscow",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/03.%20Stranger%20In%20Moscow.mp3",
+        },
+        {
+          title: "This Time Around",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/04.%20This%20Time%20Around.mp3",
+        },
+        {
+          title: "Earth Song",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/05.%20Earth%20Song.mp3",
+        },
+        {
+          title: "D.S.",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/06.%20D.S..mp3",
+        },
+        {
+          title: "Money",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/07.%20Money.mp3",
+        },
+        {
+          title: "Come Together",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/08.%20Come%20Together.mp3",
+        },
+        {
+          title: "You Are Not Alone",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/09.%20You%20Are%20Not%20Alone.mp3",
+        },
+        {
+          title: "Childhood",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/10.%20Childhood.mp3",
+        },
+        {
+          title: "Tabloid Junkie",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/11.%20Tabloid%20Junkie.mp3",
+        },
+        {
+          title: "2 Bad",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/12.%202%20Bad.mp3",
+        },
+        {
+          title: "History",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/13.%20History.mp3",
+        },
+        {
+          title: "Little Susie",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/14.%20Little%20Susie.mp3",
+        },
+        {
+          title: "Smile",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1995%20-%20HIStory%20Past%20Present%20and%20Future%20Book%20I/Disc%20Two%20HIStory%20Continues/15.%20Smile.mp3",
         },
       ],
     },

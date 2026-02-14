@@ -414,7 +414,7 @@ window.addArtist({
     // :::::::::::::::::::: Straight Ahead-Disc1 :::::::::::::::::::::::
     {
       // NOM albums
-      id: "straight-ahead-disc1",
+      id: "straight-ahead-Disc1",
       // NOM ALBUMS
       name: "Straight Ahead Disc1",
 
@@ -424,9 +424,9 @@ window.addArtist({
         //   COVER ALBUM
         "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc1/cover.jpg",
       // URL ALBUM 3D
-      cdnPath: "Jimi%20Hendrix/straight-ahead-Disc1/",
+      cdnPath: "Jimi%20Hendrix/straight-ahead-Disc1",
       //   NOM ALBUMS
-      projectName: "straight-ahead-disc1",
+      projectName: "straight-ahead-Disc1",
       albumSize: "55em",
       albumOffset: "2em",
       tracks: [
@@ -492,7 +492,7 @@ window.addArtist({
     // :::::::::::::::::::: Straight Ahead-Disc2 :::::::::::::::::::::::
     {
       // NOM albums
-      id: "straight-ahead-disc2",
+      id: "straight-ahead-Disc2",
       // NOM ALBUMS
       name: "Straight Ahead Disc2",
 
@@ -504,7 +504,7 @@ window.addArtist({
       // URL ALBUM 3D
       cdnPath: "Jimi%20Hendrix/straight-ahead-Disc2",
       //   NOM ALBUMS
-      projectName: "straight-ahead-disc2",
+      projectName: "straight-ahead-Disc2",
       albumSize: "55em",
       albumOffset: "2em",
       tracks: [
@@ -558,7 +558,7 @@ window.addArtist({
     // :::::::::::::::::::: Straight Ahead-Disc3 :::::::::::::::::::::::
     {
       // NOM albums
-      id: "straight-ahead-disc3",
+      id: "straight-ahead-Disc3",
       // NOM ALBUMS
       name: "Straight Ahead Disc3",
 
@@ -568,9 +568,9 @@ window.addArtist({
         //   COVER ALBUM
         "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc3/cover.jpg",
       // URL ALBUM 3D
-      cdnPath: "Jimi%20Hendrix/straight-ahead-Disc1",
+      cdnPath: "Jimi%20Hendrix/straight-ahead-Disc3",
       //   NOM ALBUMS
-      projectName: "straight-ahead-disc3",
+      projectName: "straight-ahead-Disc3",
       albumSize: "55em",
       albumOffset: "2em",
       tracks: [
@@ -605,6 +605,59 @@ window.addArtist({
         {
           title: "Machine Gun",
           url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1970%20-%20Straight%20Ahead-Disc3/08%20-%20Machine%20Gun.mp3",
+        },
+      ],
+    },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: Rainbow Bridge :::::::::::::::::::::::
+    {
+      // NOM albums
+      id: "rainbow-bridge",
+      // NOM ALBUMS
+      name: "Rainbow Bridge",
+      //   ANNEE
+      year: "1971",
+      cover:
+        //   COVER ALBUM
+        "https://mymusiclibrary.github.io/jimi-hendrix-part2/1971%20-%20Rainbow%20Bridge/cover.jpg",
+      // URL ALBUM 3D
+      cdnPath: "Jimi%20Hendrix/rainbow-bridge",
+      //   NOM ALBUMS
+      projectName: "rainbow-bridge",
+      albumSize: "55em",
+      albumOffset: "2em",
+      tracks: [
+        {
+          title: "Dolly Dagger",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1971%20-%20Rainbow%20Bridge/01-%20Dolly%20Dagger.mp3",
+        },
+        {
+          title: "Earth Blues",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1971%20-%20Rainbow%20Bridge/02-%20Earth%20Blues.mp3",
+        },
+        {
+          title: "Pali Gap",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1971%20-%20Rainbow%20Bridge/03-%20Pali%20Gap.mp3",
+        },
+        {
+          title: "Room Full of Mirrors",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1971%20-%20Rainbow%20Bridge/04-%20Room%20Full%20of%20Mirrors.mp3",
+        },
+        {
+          title: "Star Spangled Banner",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1971%20-%20Rainbow%20Bridge/05-%20Star%20Spangled%20Banner.mp3",
+        },
+        {
+          title: "Look Over Yonder",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1971%20-%20Rainbow%20Bridge/06-%20Look%20Over%20Yonder.mp3",
+        },
+        {
+          title: "Hear My Train a Comin'",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1971%20-%20Rainbow%20Bridge/07-%20Hear%20My%20Train%20a%20Comin%27.mp3",
+        },
+        {
+          title: "Hey Baby (New Rising Sun)",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1971%20-%20Rainbow%20Bridge/08-%20Hey%20Baby%20%28New%20Rising%20Sun%29.mp3",
         },
       ],
     },
@@ -666,6 +719,59 @@ window.addArtist({
         {
           title: "Belly Button Window",
           url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1971%20-%20The%20Cry%20of%20Love/10%20-%20Belly%20Button%20Window.mp3",
+        },
+      ],
+    },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: Crash Landing :::::::::::::::::::::::
+    {
+      // NOM albums DOIT ETRE EXACTEMENT COMME LE LIEN
+      id: "crash-landing",
+      // NOM ALBUMS
+      name: "Crash Landing",
+      //   ANNEE
+      year: "1975",
+      cover:
+        //   COVER ALBUM
+        "https://mymusiclibrary.github.io/jimi-hendrix-part2/1975%20-%20Crash%20Landing/cover.jpg",
+      // URL ALBUM 3D
+      cdnPath: "Jimi%20Hendrix/crash-landing/",
+      //   NOM ALBUMS
+      projectName: "crash-landing",
+      albumSize: "55em",
+      albumOffset: "2em",
+      tracks: [
+        {
+          title: "Message To Love",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1975%20-%20Crash%20Landing/01-%20Message%20To%20Love.mp3",
+        },
+        {
+          title: "Somewhere Over The Rainbow",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1975%20-%20Crash%20Landing/02-%20Somewhere%20Over%20The%20Rainbow.mp3",
+        },
+        {
+          title: "Crash Landing",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1975%20-%20Crash%20Landing/03-%20Crash%20Landing.mp3",
+        },
+        {
+          title: "Come Down Hard On Me",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1975%20-%20Crash%20Landing/04-%20Come%20Down%20Hard%20On%20Me.mp3",
+        },
+        {
+          title: "Peace In Mississippi",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1975%20-%20Crash%20Landing/05-%20Peace%20In%20Mississippi.mp3",
+        },
+        {
+          title: "With The Power",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1975%20-%20Crash%20Landing/06-%20With%20The%20Power.mp3",
+        },
+        {
+          title: "Stone Free Again",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1975%20-%20Crash%20Landing/07-%20Stone%20Free%20Again.mp3",
+        },
+        {
+          title: "Captain Coconut",
+          url: "https://mymusiclibrary.github.io/jimi-hendrix-part2/1975%20-%20Crash%20Landing/08-%20Captain%20Coconut.mp3",
         },
       ],
     },
