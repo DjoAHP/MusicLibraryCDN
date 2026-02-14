@@ -239,8 +239,16 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
 
   // MON LIEN CDN
   const BASE_URL =
-    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.28/images/";
-  const generateImageUrl = (name) => `url(${BASE_URL}${cdnPath}/${name}.webp)`;
+    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.33/images/";
+  function generateImageUrl(name, callback) {
+    const webpUrl = `${BASE_URL}${cdnPath}/${name}.webp`;
+    const jpgUrl = `${BASE_URL}${cdnPath}/${name}.jpg`;
+
+    const img = new Image();
+    img.onload = () => callback(`url(${webpUrl})`);
+    img.onerror = () => callback(`url(${jpgUrl})`);
+    img.src = webpUrl;
+  }
 
   // Récupère toutes les layers
   const layers = [...albumContainer.querySelectorAll("div")];
@@ -248,7 +256,11 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
 
   layers.forEach((el) => {
     const depth = Number(el.innerText.trim());
-    el.style.setProperty("--image", generateImageUrl(el.id));
+    generateImageUrl(el.id, (url) => {
+      el.style.setProperty("--image", url);
+      el.style.backgroundImage = url;
+    });
+    el.style.backgroundImage = generateImageUrl(el.id);
     el.style.setProperty("--depth", `${depth}em`);
     images.push({ el, name: el.id, depth });
   });
@@ -258,7 +270,10 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
     images.slice(i + 1).forEach((backLayer) => {
       const shadow = document.createElement("div");
       shadow.classList.add("shadow");
-      shadow.style.backgroundImage = generateImageUrl(backLayer.name);
+      generateImageUrl(backLayer.name, (url) => {
+        shadow.style.backgroundImage = url;
+      });
+
       shadow.style.setProperty(
         "--blur",
         `${(backLayer.depth - frontLayer.depth) / 8}em`,
