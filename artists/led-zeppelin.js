@@ -27,6 +27,38 @@ window.addArtist({
           title: "Good Times Bad Times",
           url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20I/01%20-%20Good%20Times%20Bad%20Times.mp3",
         },
+        {
+          title: "Babe I'm Gonna Leave You",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20I/02%20-%20Babe%20I%27m%20Gonna%20Leave%20You.mp3",
+        },
+        {
+          title: "You Shook Me",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20I/03%20-%20You%20Shook%20Me.mp3",
+        },
+        {
+          title: "Dazed and Confused",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20I/04%20-%20Dazed%20and%20Confused.mp3",
+        },
+        {
+          title: "Your Time Is Gonna Come",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20I/05%20-%20Your%20Time%20Is%20Gonna%20Come.mp3",
+        },
+        {
+          title: "Black Mountain Side (Instrumental)",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20I/06%20-%20Black%20Mountain%20Side%20(Instrumental).mp3",
+        },
+        {
+          title: "Communication Breakdown",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20I/07%20-%20Communication%20Breakdown.mp3",
+        },
+        {
+          title: "I Can't Quit You Baby",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20I/08%20-%20I%20Can%27t%20Quit%20You%20Baby.mp3",
+        },
+        {
+          title: "How Many More Times",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20I/09%20-%20How%20Many%20More%20Times.mp3",
+        },
       ],
     },
     // :::::::::::::::::: ------------ ::::::::::::::::::
@@ -49,8 +81,40 @@ window.addArtist({
       albumOffset: "2em",
       tracks: [
         {
-          title: "Good Times Bad Times",
-          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20II/01%20-%20Good%20Times%20Bad%20Times.mp3",
+          title: "Whole Lotta Love",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20II/01%20-%20Whole%20Lotta%20Love.mp3",
+        },
+        {
+          title: "What Is And Never Should Be",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20II/02%20-%20What%20Is%20And%20Never%20Should%20Be.mp3",
+        },
+        {
+          title: "The Lemon Song",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20II/03%20-%20The%20Lemon%20Song.mp3",
+        },
+        {
+          title: "Thank You",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20II/04%20-%20Thank%20You.mp3",
+        },
+        {
+          title: "Heartbreaker",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20II/05%20-%20Heartbreaker.mp3",
+        },
+        {
+          title: "Living Loving Maid (She's Just A Woman)",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20II/06%20-%20Living%20Loving%20Maid%20(She%27s%20Just%20A%20Woman).mp3",
+        },
+        {
+          title: "Ramble On",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20II/07%20-%20Ramble%20On.mp3",
+        },
+        {
+          title: "Moby Dick",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20II/08%20-%20Moby%20Dick.mp3",
+        },
+        {
+          title: "Bring It On Home",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1969%20-%20Led%20Zeppelin%20II/09%20-%20Bring%20It%20On%20Home.mp3",
         },
       ],
     },
@@ -74,8 +138,44 @@ window.addArtist({
       albumOffset: "2em",
       tracks: [
         {
-          title: "Good Times Bad Times",
-          url: "https://mymusiclibrary.github.io/led-zeppelin/1970%20-%20Led%20Zeppelin%20III/01%20-%20Good%20Times%20Bad%20Times.mp3",
+          title: "Immigrant Song",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1970%20-%20Led%20Zeppelin%20III/01%20-%20Immigrant%20Song.mp3",
+        },
+        {
+          title: "Friends",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1970%20-%20Led%20Zeppelin%20III/02%20-%20Friends.mp3",
+        },
+        {
+          title: "Celebration Day",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1970%20-%20Led%20Zeppelin%20III/03%20-%20Celebration%20Day.mp3",
+        },
+        {
+          title: "Since I've Been Loving You",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1970%20-%20Led%20Zeppelin%20III/04%20-%20Since%20I%27ve%20Been%20Loving%20You.mp3",
+        },
+        {
+          title: "Out on the Tiles",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1970%20-%20Led%20Zeppelin%20III/05%20-%20Out%20on%20the%20Tiles.mp3",
+        },
+        {
+          title: "Gallows Pole",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1970%20-%20Led%20Zeppelin%20III/06%20-%20Gallows%20Pole.mp3",
+        },
+        {
+          title: "Tangerine",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1970%20-%20Led%20Zeppelin%20III/07%20-%20Tangerine.mp3",
+        },
+        {
+          title: "That's the Way",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1970%20-%20Led%20Zeppelin%20III/08%20-%20That%27s%20the%20Way.mp3",
+        },
+        {
+          title: "Bron-Y-Aur Stomp",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1970%20-%20Led%20Zeppelin%20III/09%20-%20Bron-Y-Aur%20Stomp.mp3",
+        },
+        {
+          title: "Hats off To (Roy) Harper",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1970%20-%20Led%20Zeppelin%20III/10%20-%20Hats%20off%20To%20(Roy)%20Harper.mp3",
         },
       ],
     },
@@ -99,8 +199,36 @@ window.addArtist({
       albumOffset: "2em",
       tracks: [
         {
-          title: "Good Times Bad Times",
-          url: "https://mymusiclibrary.github.io/led-zeppelin/1971%20-%20Led%20Zeppelin%20IV/01%20-%20Good%20Times%20Bad%20Times.mp3",
+          title: "Black Dog",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1971%20-%20Led%20Zeppelin%20IV/01%20-%20Black%20Dog.mp3",
+        },
+        {
+          title: "Rock and Roll",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1971%20-%20Led%20Zeppelin%20IV/02%20-%20Rock%20and%20Roll.mp3",
+        },
+        {
+          title: "The Battle of Evermore",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1971%20-%20Led%20Zeppelin%20IV/03%20-%20The%20Battle%20of%20Evermore.mp3",
+        },
+        {
+          title: "Stairway To Heaven",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1971%20-%20Led%20Zeppelin%20IV/04%20-%20Stairway%20To%20Heaven.MP3",
+        },
+        {
+          title: "Misty Mountain Hop",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1971%20-%20Led%20Zeppelin%20IV/05%20-%20Misty%20Mountain%20Hop.MP3",
+        },
+        {
+          title: "Four Sticks",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1971%20-%20Led%20Zeppelin%20IV/06%20-%20Four%20Sticks.mp3",
+        },
+        {
+          title: "Going To California",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1971%20-%20Led%20Zeppelin%20IV/07%20-%20Going%20To%20California.MP3",
+        },
+        {
+          title: "When The Levee Breaks",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1971%20-%20Led%20Zeppelin%20IV/08%20-%20When%20The%20Levee%20Breaks.MP3",
         },
       ],
     },
@@ -124,8 +252,36 @@ window.addArtist({
       albumOffset: "2em",
       tracks: [
         {
-          title: "Good Times Bad Times",
-          url: "https://mymusiclibrary.github.io/led-zeppelin/1973%20-%20Led%20Zeppelin%20Houses%20of%20The%20Holy/01%20-%20Good%20Times%20Bad%20Times.mp3",
+          title: "The Song Remains The Same",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1973%20-%20Houses%20of%20The%20Holy/01%20-%20The%20Song%20Remains%20The%20Same.mp3",
+        },
+        {
+          title: "The Rain Song",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1973%20-%20Houses%20of%20The%20Holy/02%20-%20The%20Rain%20Song.mp3",
+        },
+        {
+          title: "Over The Hills And Far Away",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1973%20-%20Houses%20of%20The%20Holy/03%20-%20Over%20The%20Hills%20And%20Far%20Away.mp3",
+        },
+        {
+          title: "The Crunge",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1973%20-%20Houses%20of%20The%20Holy/04%20-%20The%20Crunge.mp3",
+        },
+        {
+          title: "Dancing Days",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1973%20-%20Houses%20of%20The%20Holy/05%20-%20Dancing%20Days.mp3",
+        },
+        {
+          title: "D'yer Mak'er",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1973%20-%20Houses%20of%20The%20Holy/06%20-%20D'yer%20Mak'er.mp3",
+        },
+        {
+          title: "No Quarter",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1973%20-%20Houses%20of%20The%20Holy/07%20-%20No%20Quarter.mp3",
+        },
+        {
+          title: "The Ocean",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1973%20-%20Houses%20of%20The%20Holy/08%20-%20The%20Ocean.mp3",
         },
       ],
     },
@@ -149,8 +305,28 @@ window.addArtist({
       albumOffset: "2em",
       tracks: [
         {
-          title: "Good Times Bad Times",
-          url: "https://mymusiclibrary.github.io/led-zeppelin/1975%20-%20Led%20Zeppelin%20Physical%20Graffiti/01%20-%20Good%20Times%20Bad%20Times.mp3",
+          title: "Custard Pie",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1975%20-%20Physical%20Graffiti/CD%201/01%20-%20Custard%20Pie.mp3",
+        },
+        {
+          title: "The Rover",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1975%20-%20Physical%20Graffiti/CD%201/02%20-%20The%20Rover.mp3",
+        },
+        {
+          title: "In My Time Of Dying",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1975%20-%20Physical%20Graffiti/CD%201/03%20-%20In%20My%20Time%20Of%20Dying.mp3",
+        },
+        {
+          title: "Houses Of The Holy",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1975%20-%20Physical%20Graffiti/CD%201/04%20-%20Houses%20Of%20The%20Holy.mp3",
+        },
+        {
+          title: "Trampled Underfoot",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1975%20-%20Physical%20Graffiti/CD%201/05%20-%20Trampled%20Underfoot.mp3",
+        },
+        {
+          title: "Kashmir",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1975%20-%20Physical%20Graffiti/CD%201/06%20-%20Kashmir.mp3",
         },
       ],
     },
@@ -200,8 +376,32 @@ window.addArtist({
       albumOffset: "2em",
       tracks: [
         {
-          title: "Good Times Bad Times",
-          url: "https://mymusiclibrary.github.io/led-zeppelin/1976%20-%20Led%20Zeppelin%20Presence/01%20-%20Good%20Times%20Bad%20Times.mp3",
+          title: "Achilles Last Stand",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1976%20-%20Presence/01%20-%20Achilles%20Last%20Stand.mp3",
+        },
+        {
+          title: "For you Life",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1976%20-%20Presence/02%20-%20For%20you%20Life.mp3",
+        },
+        {
+          title: "Royal Orleans",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1976%20-%20Presence/03%20-%20Royal%20Orleans.mp3",
+        },
+        {
+          title: "Nobody's Fault but Mine",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1976%20-%20Presence/04%20-%20Nobody's%20Fault%20but%20Mine.mp3",
+        },
+        {
+          title: "Candy Store Rock",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1976%20-%20Presence/05%20-%20Candy%20Store%20Rock.mp3",
+        },
+        {
+          title: "Host on for Nowhere",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1976%20-%20Presence/06%20-%20Host%20on%20for%20Nowhere.mp3",
+        },
+        {
+          title: "Tea for One",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1976%20-%20Presence/07%20-%20Tea%20for%20One.mp3",
         },
       ],
     },
