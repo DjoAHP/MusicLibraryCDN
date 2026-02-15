@@ -406,7 +406,7 @@ window.addArtist({
       ],
     },
     // :::::::::::::::::: ------------ ::::::::::::::::::
-    // :::::::::::::::::::: The Song Remains the Same :::::::::::::::::::::::
+    // :::::::::::::::::::: The Song Remains the Same Disc 1 :::::::::::::::::::::::
     {
       // NOM albums DOIT ETRE EXACTEMENT COMME LE LIEN
       id: "the-song-remains-the-same",
@@ -450,8 +450,32 @@ window.addArtist({
       albumOffset: "2em",
       tracks: [
         {
-          title: "Good Times Bad Times",
-          url: "https://mymusiclibrary.github.io/led-zeppelin/1979%20-%20Led%20Zeppelin%20In%20Through%20The%20Out%20Door/01%20-%20Good%20Times%20Bad%20Times.mp3",
+          title: "In The Evening",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1979%20-%20In%20Through%20The%20Out%20Door/01%20-%20In%20The%20Evening.mp3",
+        },
+        {
+          title: "South Bound Saurez",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1979%20-%20In%20Through%20The%20Out%20Door/02%20-%20South%20Bound%20Saurez.mp3",
+        },
+        {
+          title: "Fool In The Rain",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1979%20-%20In%20Through%20The%20Out%20Door/03%20-%20Fool%20In%20The%20Rain.mp3",
+        },
+        {
+          title: "Hot Dog",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1979%20-%20In%20Through%20The%20Out%20Door/04%20-%20Hot%20Dog.mp3",
+        },
+        {
+          title: "Carouselambra",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1979%20-%20In%20Through%20The%20Out%20Door/05%20-%20Carouselambra.mp3",
+        },
+        {
+          title: "All My Love",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1979%20-%20In%20Through%20The%20Out%20Door/06%20-%20All%20My%20Love.mp3",
+        },
+        {
+          title: "I'm Gonna Crawl",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1979%20-%20In%20Through%20The%20Out%20Door/07%20-%20I'm%20Gonna%20Crawl.mp3",
         },
       ],
     },
@@ -475,8 +499,36 @@ window.addArtist({
       albumOffset: "2em",
       tracks: [
         {
-          title: "Good Times Bad Times",
-          url: "https://mymusiclibrary.github.io/led-zeppelin/1982%20-%20Led%20Zeppelin%20Coda/01%20-%20Good%20Times%20Bad%20Times.mp3",
+          title: "We're Gonna Groove",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1982%20-%20Coda/01%20-%20We're%20Gonna%20Groove.mp3",
+        },
+        {
+          title: "Poor Tom",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1982%20-%20Coda/02%20-%20Poor%20Tom.mp3",
+        },
+        {
+          title: "I Can't Quit You Baby",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1982%20-%20Coda/03%20-%20I%20Can't%20Quit%20You%20Baby.mp3",
+        },
+        {
+          title: "Walter's Walk",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1982%20-%20Coda/04%20-%20Walter's%20Walk.mp3",
+        },
+        {
+          title: "Ozone Baby",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1982%20-%20Coda/05%20-%20Ozone%20Baby.mp3",
+        },
+        {
+          title: "Darlene",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1982%20-%20Coda/06%20-%20Darlene.mp3",
+        },
+        {
+          title: "Bonzo's Montreux",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1982%20-%20Coda/07%20-%20Bonzo's%20Montreux.mp3",
+        },
+        {
+          title: "Wearing and Tearing",
+          url: "https://mymusiclibrary.github.io/led-zeppelin/1982%20-%20Coda/08%20-%20Wearing%20and%20Tearing.mp3",
         },
       ],
     },

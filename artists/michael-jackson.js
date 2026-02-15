@@ -49,15 +49,15 @@ window.addArtist({
         },
         {
           title: "She's Out Of My Life",
-          url: "https://mymusiclibrary.github.io/michael-jackson/1979%20-%20Off%20The%20Wall/07%20-%20She%27s%20Out%20Of%20My%20Life.mp3",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1979%20-%20Off%20The%20Wall/07%20-%20She%20s%20Out%20Of%20My%20Life.mp3",
         },
         {
           title: "I Can't Help It",
-          url: "https://mymusiclibrary.github.io/michael-jackson/1979%20-%20Off%20The%20Wall/08%20-%20I%20Can%27t%20Help%20It.mp3",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1979%20-%20Off%20The%20Wall/08%20-%20I%20Can%20t%20Help%20It.mp3",
         },
         {
           title: "It's The Falling In Love",
-          url: "https://mymusiclibrary.github.io/michael-jackson/1979%20-%20Off%20The%20Wall/09%20-%20It%27s%20The%20Falling%20In%20Love.mp3",
+          url: "https://mymusiclibrary.github.io/michael-jackson/1979%20-%20Off%20The%20Wall/09%20-%20It%20s%20The%20Falling%20In%20Love.mp3",
         },
         {
           title: "Burn This Disco Out",

@@ -7,7 +7,7 @@ window.addArtist({
     // :::::::::::::::::: ------------ ::::::::::::::::::
     // :::::::::::::::::::: ALBUM :::::::::::::::::::::::
     {
-      // NOM albums DOIT ETRE EXACTEMENT COMME LE LIEN
+      // NOM albums DOIT ETRE EXACTEMENT COMME LE LIEN (projectName)
       id: "hell",
       // NOM ALBUMS
       name: "Hell",
