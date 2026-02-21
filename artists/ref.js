@@ -1,8 +1,8 @@
-// James brown - Discographie
+// Daft Punk - Discographie
 window.addArtist({
-  id: "james-brown",
-  name: "James Brown",
-  image: "https://mymusiclibrary.github.io/james-brown/artist.jpg",
+  id: "daft-punk",
+  name: "Daft Punk",
+  image: "https://mymusiclibrary.github.io/daft-punk/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::
     // :::::::::::::::::::: ALBUM :::::::::::::::::::::::
