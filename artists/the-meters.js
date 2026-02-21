@@ -75,8 +75,74 @@ window.addArtist({
           title: "Borro (Bonus)",
           url: "https://mymusiclibrary.github.io/the-meters/1969%20-%20Look-ka%20py%20py/15%20-%20Borro%20%28Bonus%29.mp3",
         },
-        //    :::::::::::::::::: LES REST ICI ::::::::::::::::::
       ],
     },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: Rejuvenation :::::::::::::::::::::::
+    {
+      // NOM albums DOIT ETRE EXACTEMENT COMME LE LIEN (projectName)
+      id: "rejuvenation",
+      // NOM ALBUMS
+      name: "Rejuvenation",
+      //   ANNEE
+      year: "1974",
+      cover:
+        //   COVER ALBUM
+        "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/cover.jpg",
+      // URL ALBUM 3D
+      cdnPath: "The%20Meters/rejuvenation/",
+      //   NOM ALBUMS
+      projectName: "rejuvenation",
+      albumSize: "55em",
+      albumOffset: "2em",
+      tracks: [
+        {
+          title: "People say",
+          url: "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/01%20-%20People%20say.mp3",
+        },
+        {
+          title: "Love is for me",
+          url: "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/02%20-%20Love%20is%20for%20me.mp3",
+        },
+        {
+          title: "Just kissed my baby",
+          url: "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/03%20-%20Just%20kissed%20my%20baby.mp3",
+        },
+        {
+          title: "What' cha say",
+          url: "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/04%20-%20What%27%20cha%20say.mp3",
+        },
+        {
+          title: "Jungle man",
+          url: "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/05%20-%20Jungle%20man.mp3",
+        },
+        {
+          title: "Hey pocky a-way",
+          url: "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/06%20-%20Hey%20pocky%20a-way.mp3",
+        },
+        {
+          title: "It ain't no use",
+          url: "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/07%20-%20It%20ain%27t%20no%20use.mp3",
+        },
+        {
+          title: "Loving you is on my mind",
+          url: "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/08%20-%20Loving%20you%20is%20on%20my%20mind.mp3",
+        },
+        {
+          title: "Africa",
+          url: "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/09%20-%20Africa.mp3",
+        },
+        {
+          title: "Hey pocky a-way. (single version)",
+          url: "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/10%20-%20Hey%20pocky%20a-way%2E%20%28single%20version%29.mp3",
+        },
+        {
+          title: "People say. (single version)",
+          url: "https://mymusiclibrary.github.io/the-meters/1974%20-%20Rejuvenation/11%20-%20People%20say%2E%20%28single%20version%29.mp3",
+        },
+      ],
+    },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: ALBUM :::::::::::::::::::::::
   ],
 });
