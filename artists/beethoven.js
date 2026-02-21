@@ -24,6 +24,10 @@ window.addArtist({
       albumOffset: "2em",
       tracks: [
         {
+          title: "Symphony no.7 - II. Allegretto",
+          url: "https://mymusiclibrary.github.io/beethoven/1812%20-%20Symphony/no.7/02%20-%20Symphony%20no.7%20-%20II.mp3",
+        },
+        {
           title: "Symphony no.1",
           url: "https://mymusiclibrary.github.io/beethoven/1812%20-%20Symphony/01%20-%20Symphony%20no.%201.mp3",
         },

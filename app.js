@@ -241,7 +241,7 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
 
   // MON LIEN CDN
   const BASE_URL =
-    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.49/images/";
+    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.50/images/";
   function generateImageUrl(name, callback) {
     const webpUrl = `${BASE_URL}${cdnPath}/${name}.webp`;
     const jpgUrl = `${BASE_URL}${cdnPath}/${name}.jpg`;
@@ -292,6 +292,12 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
 // =========================================
 // SETUP MUSIC PLAYER
 // =========================================
+function formatDuration(seconds) {
+  if (!seconds || isNaN(seconds)) return "--:--";
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${mins}:${secs.toString().padStart(2, "0")}`;
+}
 
 function setupMusicPlayer(
   artistName,
@@ -306,14 +312,34 @@ function setupMusicPlayer(
 
   let current = -1;
 
+  const durationCache = window._durationCache || (window._durationCache = {});
+
   tracks.forEach((track, i) => {
     const li = document.createElement("li");
+    const durationId = `duration-${albumId}-${i}`;
     li.innerHTML = `
-      <span class="track-number">${String(i + 1).padStart(2, "0")}</span>
-      <span class="track-name">${track.title}</span>
-    `;
+    <span class="track-number">${String(i + 1).padStart(2, "0")}</span>
+    <span class="track-name">${track.title}</span>
+    <span class="track-duration" id="${durationId}">--:--</span>
+  `;
     li.onclick = () => play(i);
     list.appendChild(li);
+
+    if (durationCache[track.url]) {
+      document.getElementById(durationId).textContent =
+        durationCache[track.url];
+    } else {
+      const tempAudio = new Audio();
+      tempAudio.preload = "metadata";
+      tempAudio.onloadedmetadata = () => {
+        const formatted = formatDuration(tempAudio.duration);
+        durationCache[track.url] = formatted;
+        const el = document.getElementById(durationId);
+        if (el) el.textContent = formatted;
+        tempAudio.src = "";
+      };
+      tempAudio.src = track.url;
+    }
   });
 
   function play(index) {
