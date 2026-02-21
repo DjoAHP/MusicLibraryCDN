@@ -557,12 +557,12 @@ window.addArtist({
       // NOM albums DOIT ETRE EXACTEMENT COMME LE LIEN (projectName)
       id: "the-mix-up",
       // NOM ALBUMS
-      name: "The Mix-Up",
+      name: "The Mix Up",
       //   ANNEE
       year: "2007",
       cover:
         //   COVER ALBUM
-        "https://mymusiclibrary.github.io/beastie-boys/2007%20-%20The%20Mix-Up/cover.jpg",
+        "https://mymusiclibrary.github.io/beastie-boys/2007%20-%20The%20Mix%20Up/cover.jpg",
       // URL ALBUM 3D
       cdnPath: "Beastie%20Boys/the-mix-up/",
       //   NOM ALBUMS
@@ -572,8 +572,9 @@ window.addArtist({
       tracks: [
         {
           title: "?",
-          url: "https://mymusiclibrary.github.io/beastie-boys/2007%20-%20The%20Mix-Up/01%20-%20B%20For%20My%20Name.mp3",
+          url: "https://mymusiclibrary.github.io/beastie-boys/2007%20-%20The%20Mix%20Up/01%20-%20B%20For%20My%20Name.mp3",
         },
+
       ],
     },
     // :::::::::::::::::: ------------ ::::::::::::::::::

@@ -212,6 +212,8 @@ function initPlayer() {
     `${album.year} - ${album.name}`,
     album.tracks,
     album.id,
+    album.cover,
+    artist.id,
   );
 }
 
@@ -291,7 +293,14 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
 // SETUP MUSIC PLAYER
 // =========================================
 
-function setupMusicPlayer(artistName, albumName, tracks, albumId) {
+function setupMusicPlayer(
+  artistName,
+  albumName,
+  tracks,
+  albumId,
+  cover = "",
+  artistId = "",
+) {
   const list = document.getElementById(`track-list-${albumId}`);
   if (!list) return;
 
@@ -315,18 +324,69 @@ function setupMusicPlayer(artistName, albumName, tracks, albumId) {
       li.classList.toggle("active", i === index);
     });
 
-    window.playGlobalTrack(track.url, track.title, artistName, albumName);
+    window.playGlobalTrack(
+      track.url,
+      track.title,
+      artistName,
+      albumName,
+      cover,
+      artistId,
+      albumId,
+    );
+
+    // Mettre à jour les fonctions de navigation globales
+    window.globalPlayerNav.prev = current > 0 ? () => play(current - 1) : null;
+    window.globalPlayerNav.next =
+      current < tracks.length - 1 ? () => play(current + 1) : null;
+
+    // Rafraîchir l'état des boutons dans le mini player
+    if (typeof updateNavButtons === "function") updateNavButtons();
   }
 
-  // Piste suivante
+  // Restaurer l'état de la playlist si une piste de cet album est en cours
+  function restoreActiveTrack() {
+    try {
+      const saved = JSON.parse(localStorage.getItem("currentTrack") || "{}");
+      if (!saved.url) return;
+
+      const activeIndex = tracks.findIndex((t) => t.url === saved.url);
+      if (activeIndex === -1) return;
+
+      // Marquer visuellement la piste active
+      current = activeIndex;
+      document
+        .querySelectorAll(`#track-list-${albumId} li`)
+        .forEach((li, i) => {
+          li.classList.toggle("active", i === activeIndex);
+        });
+
+      // Scroll vers la piste active si elle est hors vue
+      const activeLi = list.querySelectorAll("li")[activeIndex];
+      if (activeLi) {
+        activeLi.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      }
+
+      // Rebrancher la navigation prev/next pour cet album
+      window.globalPlayerNav.prev =
+        current > 0 ? () => play(current - 1) : null;
+      window.globalPlayerNav.next =
+        current < tracks.length - 1 ? () => play(current + 1) : null;
+      if (typeof updateNavButtons === "function") updateNavButtons();
+    } catch (e) {
+      // Silencieux — pas bloquant
+    }
+  }
+
+  restoreActiveTrack();
+
+  // Piste suivante automatique à la fin
   const endedHandler = function () {
     if (current < tracks.length - 1) {
       play(current + 1);
     }
   };
 
-  // Gérer la piste suivante (s'assurer qu'il n'y a qu'un seul écouteur 'ended')
-  // Retirer l'ancien écouteur s'il existe
+  // S'assurer qu'il n'y a qu'un seul écouteur 'ended'
   if (window.globalAudio._currentEndedHandler) {
     window.globalAudio.removeEventListener(
       "ended",
@@ -334,7 +394,6 @@ function setupMusicPlayer(artistName, albumName, tracks, albumId) {
     );
   }
 
-  // Ajouter le nouvel écouteur et stocker sa référence
   window.globalAudio.addEventListener("ended", endedHandler);
   window.globalAudio._currentEndedHandler = endedHandler;
 }

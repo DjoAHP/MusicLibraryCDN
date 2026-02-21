@@ -1,9 +1,11 @@
-/* ============================================ MINI PLAYER MODERNE (ESTHÉTIQUE AMÉLIORÉE) ============================================ */
+/* ============================================
+   MINI PLAYER MODERNE (ESTHÉTIQUE AMÉLIORÉE)
+   ============================================ */
 
 /* Variables de Design */
 :root {
-    --player-height: 100px; /* Hauteur réduite pour un look plus compact */
-    --accent-color: #9E7FFF; /* Couleur Primaire (Violet/Bleu) */
+    --player-height: 100px;
+    --accent-color: #9E7FFF;
     --surface-color: #262626;
     --dark-bg: #171717;
     --text-color: #FFFFFF;
@@ -17,80 +19,133 @@
     left: 0;
     right: 0;
     height: var(--player-height);
-    /* Fond sombre avec un gradient subtil et un flou intense (Glassmorphism) */
-    background: rgba(23, 23, 23, 0.8); /* Fond sombre semi-transparent */
-    backdrop-filter: blur(30px); /* Flou intense pour l'effet Glass */
-    -webkit-backdrop-filter: blur(30px); /* Compatibilité Safari */
+    background: rgba(23, 23, 23, 0.8);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     border-top: 1px solid var(--border-color);
-    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5); /* Ombre pour soulever le lecteur */
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
     z-index: 9999;
     display: none;
-    padding: 0 30px; /* Padding horizontal */
+    padding: 0 30px;
     box-sizing: border-box;
 }
 
-/* CONTENEUR PRINCIPAL: Layout Horizontal (Info | Contrôles | Progression) */
+/* CONTENEUR PRINCIPAL */
 .mini-player-main {
     height: 100%;
     display: flex;
-    flex-direction: row; /* Disposition horizontale */
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 0; /* Suppression du padding excessif */
+    gap: 16px;
+}
+
+/* ================= POCHETTE (Extrême gauche) ================= */
+.mini-player-cover-wrapper {
+    order: 0;
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(158, 127, 255, 0.2);
+    background: var(--surface-color);
+}
+
+#mini-player-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 /* ================= INFOS (Gauche) ================= */
 .mini-player-info {
-    order: 1; /* Position à gauche */
+    order: 1;
     flex-shrink: 0;
-    width: 30%;
-    min-width: 200px;
+    width: 22%;
+    min-width: 160px;
     text-align: left;
     color: var(--text-color);
-    padding-right: 20px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 #mini-player-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: 0.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #mini-player-artist {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--secondary-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* ================= CONTROLS (Centre) ================= */
 .mini-player-controls {
-    order: 2; /* Position au centre */
+    order: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     flex-shrink: 0;
-    width: 100px; /* Espace fixe pour le bouton */
 }
 
+/* Boutons prev / next */
+#mini-player-prev,
+#mini-player-next {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(158, 127, 255, 0.12);
+    border: 1px solid rgba(158, 127, 255, 0.25);
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mini-player-prev:hover:not(:disabled),
+#mini-player-next:hover:not(:disabled) {
+    background: rgba(158, 127, 255, 0.25);
+    border-color: rgba(158, 127, 255, 0.5);
+    transform: scale(1.1);
+}
+
+#mini-player-prev:disabled,
+#mini-player-next:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+/* Bouton play/pause */
 #mini-player-play-pause {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--accent-color); /* Couleur d'accentuation */
+    background: var(--accent-color);
     border: none;
-    color: var(--dark-bg); /* Texte sombre sur bouton lumineux */
+    color: var(--dark-bg);
     font-size: 1.4rem;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 0 0 15px rgba(158, 127, 255, 0.6); /* Effet de lueur */
+    box-shadow: 0 0 15px rgba(158, 127, 255, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 3px; /* Ajustement optique pour le triangle (▶) */
+    padding-left: 3px;
 }
 
 #mini-player-play-pause:hover {
@@ -98,21 +153,21 @@
     box-shadow: 0 0 25px rgba(158, 127, 255, 0.8);
 }
 
-/* ================= PROGRESS (Droite) ================= */
+/* ================= PROGRESS (Centre-droite) ================= */
 .mini-player-progress {
-    order: 3; /* Position à droite */
+    order: 3;
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--secondary-text);
     font-size: 0.8rem;
-    flex-grow: 1; /* Prend l'espace restant */
-    min-width: 300px;
+    flex-grow: 1;
+    min-width: 200px;
 }
 
 .mini-progress-bar {
     flex: 1;
-    height: 5px; /* Barre plus fine */
+    height: 5px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 3px;
     overflow: hidden;
@@ -121,7 +176,7 @@
 }
 
 .mini-progress-bar:hover {
-    height: 7px; /* Effet interactif au survol */
+    height: 7px;
 }
 
 .mini-progress-fill {
@@ -132,7 +187,99 @@
     transition: width 0.1s linear;
 }
 
+/* ================= VOLUME (Extrême droite) ================= */
+.mini-player-volume {
+    order: 4;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+#mini-volume-icon {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: transform 0.15s ease;
+    user-select: none;
+}
+
+#mini-volume-icon:hover {
+    transform: scale(1.2);
+}
+
+#mini-volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80px;
+    height: 4px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    transition: height 0.2s;
+    background: linear-gradient(to right,
+            var(--accent-color) 0%,
+            var(--accent-color) calc(var(--volume-percent, 100%) * 1%),
+            rgba(255, 255, 255, 0.1) calc(var(--volume-percent, 100%) * 1%),
+            rgba(255, 255, 255, 0.1) 100%);
+}
+
+#mini-volume-slider:hover {
+    height: 6px;
+}
+
+#mini-volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(158, 127, 255, 0.7);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#mini-volume-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.3);
+    box-shadow: 0 0 12px rgba(158, 127, 255, 0.9);
+}
+
+#mini-volume-slider::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 6px rgba(158, 127, 255, 0.7);
+}
+
 /* ================= BODY OFFSET ================= */
 body.has-mini-player {
     padding-bottom: var(--player-height);
+}
+
+/* ================= INFO CLIQUABLE (lien vers album) ================= */
+#mini-player-artist {
+    font-size: 0.85rem;
+    color: var(--secondary-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.2s ease;
+    border-radius: 3px;
+}
+
+#mini-player-artist[style*="pointer"] {
+    text-decoration: underline;
+    text-decoration-color: rgba(158, 127, 255, 0.4);
+    text-underline-offset: 3px;
+}
+
+#mini-player-artist[style*="pointer"]:hover {
+    color: var(--accent-color);
+    text-decoration-color: var(--accent-color);
 }
