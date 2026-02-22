@@ -2,6 +2,7 @@
 window.addArtist({
   id: "pink-floyd",
   name: "Pink Floyd",
+  genres: ["Progressive Rock", "Psychedelic Rock"],
   image: "https://mymusiclibrary.github.io/pink-floyd/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

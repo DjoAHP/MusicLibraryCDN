@@ -2,6 +2,7 @@
 window.addArtist({
   id: "jamiroquai",
   name: "Jamiroquai",
+  genres: ["Funk", "Acid Jazz", "Disco"], // ← ajouter ceci
   image: "https://mymusiclibrary.github.io/jamiroquai-part2/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

@@ -2,6 +2,7 @@
 window.addArtist({
   id: "jean-luc-ponty",
   name: "Al Di Meola , Stanley Clarke & Jean-Luc Ponty",
+  genres: ["Jazz Fusion"], // ← ajouter ceci
   image: "https://mymusiclibrary.github.io/jean-luc-ponty/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

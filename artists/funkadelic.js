@@ -2,6 +2,7 @@
 window.addArtist({
   id: "funkadelic",
   name: "Funkadelic",
+  genres: ["Funk", "Psychedelic Rock"],
   image: "https://mymusiclibrary.github.io/funkadelic/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

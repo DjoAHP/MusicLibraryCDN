@@ -76,14 +76,45 @@ function render() {
 // VUE 1 : ARTISTES
 // =========================================
 
+// FILTRES ARTISTES
+function filterArtists() {
+  const query = (document.getElementById("artist-search")?.value || "")
+    .toLowerCase()
+    .trim();
+  const genre = document.getElementById("genre-filter")?.value || "";
+
+  document.querySelectorAll("#artists-grid .card").forEach((card) => {
+    const name = card.querySelector(".card-name").textContent.toLowerCase();
+    const genres = card.dataset.genres || "";
+
+    const matchName = name.includes(query);
+    const matchGenre = !genre || genres.split(",").includes(genre);
+
+    card.style.display = matchName && matchGenre ? "" : "none";
+  });
+}
+
+// HTML ARTISTES
 function renderArtistsView() {
+  // Collecter tous les genres uniques
+  const allGenres = [
+    ...new Set(musicLibrary.artists.flatMap((a) => a.genres || []).sort()),
+  ];
+
+  const genreOptions = allGenres
+    .map((g) => `<option value="${g}">${g}</option>`)
+    .join("");
+
   const artistsHTML = musicLibrary.artists
     .map(
       (artist) => `
-    <div class="card" onclick="navigateTo('albums', {artistId: '${artist.id}'})">
+    <div class="card" 
+         data-genres="${(artist.genres || []).join(",")}"
+         onclick="navigateTo('albums', {artistId: '${artist.id}'})">
       <img src="${artist.image}" alt="${artist.name}" class="card-image" loading="lazy">
       <div class="card-info">
         <div class="card-name">${artist.name}</div>
+        ${artist.genres ? `<div class="card-genres">${artist.genres.join(" · ")}</div>` : ""}
       </div>
     </div>
   `,
@@ -95,8 +126,21 @@ function renderArtistsView() {
       <header class="library-header">
         <h1>MusicLibrary</h1>
         <p class="subtitle">ARTISTES</p>
+        <div class="search-wrapper">
+          <input 
+            type="text" 
+            id="artist-search" 
+            placeholder="Rechercher un artiste..." 
+            oninput="filterArtists()"
+            autocomplete="off"
+          >
+          <select id="genre-filter" onchange="filterArtists()">
+            <option value="">Tous les styles</option>
+            ${genreOptions}
+          </select>
+        </div>
       </header>
-      <div class="grid">
+      <div class="grid" id="artists-grid">
         ${artistsHTML}
       </div>
     </div>
@@ -241,7 +285,7 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
 
   // MON LIEN CDN
   const BASE_URL =
-    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.50/images/";
+    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.51/images/";
   function generateImageUrl(name, callback) {
     const webpUrl = `${BASE_URL}${cdnPath}/${name}.webp`;
     const jpgUrl = `${BASE_URL}${cdnPath}/${name}.jpg`;

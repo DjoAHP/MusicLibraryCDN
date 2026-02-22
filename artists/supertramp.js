@@ -2,6 +2,7 @@
 window.addArtist({
   id: "supertramp",
   name: "Supertramp",
+  genres: ["Progressive Rock"],
   image: "https://mymusiclibrary.github.io/supertramp/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

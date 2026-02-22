@@ -2,6 +2,7 @@
 window.addArtist({
   id: "george-benson",
   name: "George Benson",
+  genres: ["Jazz", "R&B"], // ← ajouter ceci
   image: "https://mymusiclibrary.github.io/george-benson/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

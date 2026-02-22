@@ -2,8 +2,81 @@
 window.addArtist({
   id: "the-meters",
   name: "The Meters",
+  genres: ["Funk", "Soul", "Jazz"],
   image: "https://mymusiclibrary.github.io/the-meters/artist.jpg",
   albums: [
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: Struttin' :::::::::::::::::::::::
+    {
+      // NOM albums DOIT ETRE EXACTEMENT COMME LE LIEN (projectName)
+      id: "struttin",
+      // NOM ALBUMS
+      name: "Struttin'",
+
+      //   ANNEE
+      year: "1970",
+      cover:
+        //   COVER ALBUM
+        "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/cover.jpg",
+      // URL ALBUM 3D
+      cdnPath: "The%20Meters/struttin/",
+      //   NOM ALBUMS
+      projectName: "struttin",
+      albumSize: "55em",
+      albumOffset: "2em",
+      tracks: [
+        {
+          title: "Chicken Strut",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/01%20-%20Chicken%20Strut.mp3",
+        },
+        {
+          title: "Britches",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/02%20-%20Britches.mp3",
+        },
+        {
+          title: "Darlin' Darlin'",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/03%20-%20Darlin%27%20Darlin%27.mp3",
+        },
+        {
+          title: "Go for Yourself",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/04%20-%20Go%20for%20Yourself.mp3",
+        },
+        {
+          title: "Hand Clapping Song",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/05%20-%20Hand%20Clapping%20Song.mp3",
+        },
+        {
+          title: "Hey Last Minute",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/06%20-%20Hey%20Last%20Minute.mp3",
+        },
+        {
+          title: "Joog",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/07%20-%20Joog.mp3",
+        },
+        {
+          title: "Liver Splash",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/08%20-%20Liver%20Splash.mp3",
+        },
+        {
+          title: "Same Old Thing",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/09%20-%20Same%20Old%20Thing.mp3",
+        },
+        {
+          title: "Tippi-Toes",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/10%20-%20Tippi-Toes.mp3",
+        },
+        {
+          title: "Wichita Lineman",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/11%20-%20Wichita%20Lineman.mp3",
+        },
+        {
+          title: "Ride Your Pony",
+          url: "https://mymusiclibrary.github.io/the-meters/1970%20-%20Struttin%27/12%20-%20Ride%20Your%20Pony.mp3",
+        },
+      ],
+    },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: Look Ka Py Py :::::::::::::::::::::::
     {
       id: "look-ka-py-py",
       name: "Look Ka Py Py",

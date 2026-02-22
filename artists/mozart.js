@@ -2,6 +2,7 @@
 window.addArtist({
   id: "mozart",
   name: "Mozart",
+  genres: ["Classique"],
   image: "https://mymusiclibrary.github.io/mozart/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

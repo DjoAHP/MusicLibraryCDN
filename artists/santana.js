@@ -2,6 +2,7 @@
 window.addArtist({
   id: "santana",
   name: "Santana",
+  genres: ["Latin Rock", "Fusion"],
   image: "https://mymusiclibrary.github.io/santana/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

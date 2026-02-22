@@ -2,6 +2,7 @@
 window.addArtist({
   id: "the-claypool-lennon-delirium",
   name: "The Claypool Lennon Delirium",
+  genres: ["Psychedelic Rock", "Progressive Rock"], // ← ajouter ceci
   image:
     "https://mymusiclibrary.github.io/the-claypool-lennon-delirium/artist.jpg",
   albums: [

@@ -2,6 +2,7 @@
 window.addArtist({
   id: "buena-vista-social-club",
   name: "Buena Vista Social Club",
+  genres: ["Salsa", "Son Cubano"],
   image: "https://mymusiclibrary.github.io/buena-vista-social-club/artist.jpg",
   albums: [
     {

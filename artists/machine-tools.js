@@ -2,6 +2,7 @@
 window.addArtist({
   id: "machine-tools",
   name: "Machine Tools",
+  genres: ["Dub", "Electronic"], // ← ajouter ceci
   image: "https://mymusiclibrary.github.io/machine-tools/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

@@ -2,6 +2,7 @@
 window.addArtist({
   id: "gentle-giant",
   name: "Gentle Giant",
+  genres: ["Psychedelic Rock"], // ← ajouter ceci
   image: "https://mymusiclibrary.github.io/gentle-giant/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

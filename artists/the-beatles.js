@@ -2,6 +2,7 @@
 window.addArtist({
   id: "the-beatles",
   name: "The Beatles",
+  genres: ["Rock", "Pop"],
   image: "https://mymusiclibrary.github.io/the-beatles/artist.jpg",
   albums: [
     {

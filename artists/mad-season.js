@@ -2,6 +2,7 @@
 window.addArtist({
   id: "mad-season",
   name: "Mad Season",
+  genres: ["Alternative Rock", "Grunge"],
   image: "https://mymusiclibrary.github.io/mad-season/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

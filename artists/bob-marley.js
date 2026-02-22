@@ -2,6 +2,7 @@
 window.addArtist({
   id: "bob-marley",
   name: "Bob Marley",
+  genres: ["Reggae"],
   image: "https://mymusiclibrary.github.io/bob-marley/artist.jpg",
   albums: [
     {

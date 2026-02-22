@@ -2,6 +2,7 @@
 window.addArtist({
   id: "daft-punk",
   name: "Daft Punk",
+  genres: ["Electronic"],
   image: "https://mymusiclibrary.github.io/daft-punk/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

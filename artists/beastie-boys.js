@@ -2,6 +2,7 @@
 window.addArtist({
   id: "beastie-boys",
   name: "Beastie Boys",
+  genres: ["Rap", "Hip-Hop"], // ← ajouter ceci
   image: "https://mymusiclibrary.github.io/beastie-boys/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::
@@ -574,7 +575,6 @@ window.addArtist({
           title: "?",
           url: "https://mymusiclibrary.github.io/beastie-boys/2007%20-%20The%20Mix%20Up/01%20-%20B%20For%20My%20Name.mp3",
         },
-
       ],
     },
     // :::::::::::::::::: ------------ ::::::::::::::::::

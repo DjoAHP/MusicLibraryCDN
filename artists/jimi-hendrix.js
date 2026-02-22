@@ -2,6 +2,7 @@
 window.addArtist({
   id: "jimi-hendrix",
   name: "Jimi Hendrix",
+  genres: ["Rock", "Psychedelic Rock"],
   image: "https://mymusiclibrary.github.io/jimi-hendrix-part1/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

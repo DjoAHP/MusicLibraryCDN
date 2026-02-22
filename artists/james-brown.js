@@ -2,8 +2,69 @@
 window.addArtist({
   id: "james-brown",
   name: "James Brown",
+  genres: ["Funk", "Soul"],
   image: "https://mymusiclibrary.github.io/james-brown/artist.jpg",
   albums: [
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: There It Is :::::::::::::::::::::::
+    {
+      // NOM albums DOIT ETRE EXACTEMENT COMME LE LIEN (projectName)
+      id: "there-it-is",
+      // NOM ALBUMS
+      name: "There It Is",
+      //   ANNEE
+      year: "1972",
+      cover:
+        //   COVER ALBUM
+        "https://mymusiclibrary.github.io/james-brown/1972%20-%20There%20It%20Is/cover.jpg",
+      // URL ALBUM 3D
+      cdnPath: "James%20Brown/there-it-is/",
+      //   NOM ALBUMS
+      projectName: "there-it-is",
+      albumSize: "55em",
+      albumOffset: "2em",
+      tracks: [
+        {
+          title: "There It Is (Parts 1&2)",
+          url: "https://mymusiclibrary.github.io/james-brown/1972%20-%20There%20It%20Is/01%20-%20There%20It%20Is%20%28Parts%201%262%29.mp3",
+        },
+        {
+          title: "King Heroin",
+          url: "https://mymusiclibrary.github.io/james-brown/1972%20-%20There%20It%20Is/02%20-%20King%20Heroin.mp3",
+        },
+        {
+          title: "I'm a Greedy Man",
+          url: "https://mymusiclibrary.github.io/james-brown/1972%20-%20There%20It%20Is/03%20-%20I%27m%20a%20Greedy%20Man.mp3",
+        },
+        {
+          title: "Who Am I",
+          url: "https://mymusiclibrary.github.io/james-brown/1972%20-%20There%20It%20Is/04%20-%20Who%20Am%20I.mp3",
+        },
+        {
+          title: "Talking Loud and Saying Nothing",
+          url: "https://mymusiclibrary.github.io/james-brown/1972%20-%20There%20It%20Is/05%20-%20Talking%20Loud%20and%20Saying%20Nothing.mp3",
+        },
+        {
+          title: "Public Enemy #1 (Part 1)",
+          url: "https://mymusiclibrary.github.io/james-brown/1972%20-%20There%20It%20Is/06%20-%20Public%20Enemy%20%231%20%28Part%201%29.mp3",
+        },
+        {
+          title: "Public Enemy #1 (Part 2)",
+          url: "https://mymusiclibrary.github.io/james-brown/1972%20-%20There%20It%20Is/07%20-%20Public%20Enemy%20%231%20%28Part%202%29.mp3",
+        },
+        {
+          title: "I Need Help (I Can't Do It Alone)",
+          url: "https://mymusiclibrary.github.io/james-brown/1972%20-%20There%20It%20Is/08%20-%20I%20Need%20Help%20%28I%20Can%27t%20Do%20It%20Alone%29.mp3",
+        },
+        {
+          title: "Never Can Say Goodbye",
+          url: "https://mymusiclibrary.github.io/james-brown/1972%20-%20There%20It%20Is/09%20-%20Never%20Can%20Say%20Goodbye.mp3",
+        },
+      ],
+    },
+    // :::::::::::::::::: ------------ ::::::::::::::::::
+    // :::::::::::::::::::: Hell :::::::::::::::::::::::
+
     {
       // NOM ARTISTS
       id: "hell",
@@ -82,8 +143,6 @@ window.addArtist({
           title: "Passionate Breezes (1978)",
           url: "https://mymusiclibrary.github.io/james-brown/1974%20-%20%20Hell/15%20-%20Passionate%20Breezes%20%281978%29.mp3",
         },
-
-        //    :::::::::::::::::: LES REST ICI ::::::::::::::::::
       ],
     },
   ],

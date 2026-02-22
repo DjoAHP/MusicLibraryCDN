@@ -2,6 +2,7 @@
 window.addArtist({
   id: "beethoven",
   name: "Beethoven",
+  genres: ["Classique"],
   image: "https://mymusiclibrary.github.io/beethoven/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

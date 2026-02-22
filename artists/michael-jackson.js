@@ -2,6 +2,7 @@
 window.addArtist({
   id: "michael-jackson",
   name: "Michael Jackson",
+  genres: ["Pop", "Funk", "R&B"],
   image: "https://mymusiclibrary.github.io/michael-jackson/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

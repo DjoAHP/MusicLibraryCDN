@@ -2,6 +2,7 @@
 window.addArtist({
   id: "sweet-smoke",
   name: "Sweet Smoke",
+  genres: ["Psychedelic Rock"], // ← ajouter ceci
   image: "https://mymusiclibrary.github.io/sweet-smoke/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

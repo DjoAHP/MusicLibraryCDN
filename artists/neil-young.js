@@ -2,6 +2,7 @@
 window.addArtist({
   id: "neil-young",
   name: "Neil Young",
+  genres: ["Rock", "Folk Rock"],
   image: "https://mymusiclibrary.github.io/neil-young/artist.jpg",
   albums: [
     {

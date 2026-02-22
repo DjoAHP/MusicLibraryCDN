@@ -2,6 +2,7 @@
 window.addArtist({
   id: "led-zeppelin",
   name: "Led Zeppelin",
+  genres: ["Rock", "Hard Rock"],
   image: "https://mymusiclibrary.github.io/led-zeppelin/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

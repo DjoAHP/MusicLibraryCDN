@@ -2,6 +2,7 @@
 window.addArtist({
   id: "yes",
   name: "Yes",
+  genres: ["Progressive Rock"],
   image: "https://mymusiclibrary.github.io/yes/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::

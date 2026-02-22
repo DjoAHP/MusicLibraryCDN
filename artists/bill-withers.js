@@ -2,6 +2,7 @@
 window.addArtist({
   id: "bill-withers",
   name: "Bill Withers",
+  genres: ["Soul", "Funk"],
   image: "https://mymusiclibrary.github.io/bill-withers/artist.jpg",
   albums: [
     // :::::::::::::::::: ------------ ::::::::::::::::::
