@@ -285,7 +285,7 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
 
   // MON LIEN CDN
   const BASE_URL =
-    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.51/images/";
+    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.53/images/";
   function generateImageUrl(name, callback) {
     const webpUrl = `${BASE_URL}${cdnPath}/${name}.webp`;
     const jpgUrl = `${BASE_URL}${cdnPath}/${name}.jpg`;
