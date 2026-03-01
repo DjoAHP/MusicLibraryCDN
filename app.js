@@ -121,9 +121,13 @@ function renderArtistsView() {
     )
     .join("");
 
-  return `
+return `
     <div class="library-container">
       <header class="library-header">
+        <a href="https://vinylstack.base44.app" target="_blank" rel="noopener" class="vinyl-link-btn">
+          <span class="vinyl-icon">🎵</span>
+          <span class="vinyl-label">Mes Vinyles</span>
+        </a>
         <h1>MusicLibrary</h1>
         <p class="subtitle">ARTISTES</p>
         <div class="search-wrapper">
@@ -285,7 +289,7 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
 
   // MON LIEN CDN
   const BASE_URL =
-    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.56/images/";
+    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.57/images/";
   function generateImageUrl(name, callback) {
     const webpUrl = `${BASE_URL}${cdnPath}/${name}.webp`;
     const jpgUrl = `${BASE_URL}${cdnPath}/${name}.jpg`;

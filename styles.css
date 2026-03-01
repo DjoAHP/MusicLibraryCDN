@@ -469,6 +469,107 @@ body.has-mini-player .page {
 }
 
 /* ============================================ */
+/* BOUTON LIEN MES VINYLES */
+/* ============================================ */
+
+.vinyl-link-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.8rem 0.8rem;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(158, 127, 255, 0.3);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    width: 100px;
+    /* ← TAILLE DU BOUTON : modifiez cette valeur */
+}
+
+.vinyl-icon {
+    width: 40px;
+    /* ← TAILLE DE L'ICÔNE : modifiez cette valeur */
+    height: 40px;
+    position: relative;
+    flex-shrink: 0;
+    transition: transform 0.5s ease;
+}
+
+/* SVG Vinyle dessiné en CSS */
+.vinyl-icon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at center,
+            #2a2a2a 0%,
+            #1a1a1a 18%,
+            #111 19%,
+            #222 20%,
+            #111 28%,
+            #222 29%,
+            #111 38%,
+            #222 39%,
+            #111 50%,
+            #1a1a1a 100%);
+    box-shadow: 0 0 8px rgba(158, 127, 255, 0.4);
+}
+
+/* Centre du vinyle (label coloré) */
+.vinyl-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, #9E7FFF, #6a4fcf);
+    box-shadow: 0 0 6px rgba(158, 127, 255, 0.6);
+}
+
+.vinyl-label {
+    font-size: 0.5rem;
+    /* ← TAILLE DU TEXTE : modifiez cette valeur */
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.vinyl-link-btn:hover {
+    background: rgba(158, 127, 255, 0.18);
+    border-color: rgba(158, 127, 255, 0.6);
+    box-shadow: 0 8px 30px rgba(158, 127, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
+.vinyl-link-btn:hover .vinyl-icon {
+    transform: rotate(30deg);
+}
+
+.vinyl-link-btn:hover .vinyl-icon::before {
+    box-shadow: 0 0 14px rgba(158, 127, 255, 0.7);
+}
+
+.vinyl-link-btn:hover .vinyl-label {
+    color: #9E7FFF;
+}
+
+/* ============================================ */
 /* RESPONSIVE */
 /* ============================================ */
 
