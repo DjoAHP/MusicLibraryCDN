@@ -3,7 +3,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-DjoAHP%2FMusicLibraryCDN-181717?style=flat&logo=github)](https://github.com/DjoAHP/MusicLibraryCDN)
 [![Live](https://img.shields.io/badge/Live-djoahp.github.io-4caf50?style=flat&logo=github-pages)](https://djoahp.github.io/MusicLibraryCDN/#/)
 
-![Screenshot MusicLibrary](screenshot.jpg)
+[![Interface app](screenshot.jpg)](https://djoahp.github.io/MusicLibraryCDN/#/)
 
 Une application web **Single Page** pour naviguer et écouter ta bibliothèque musicale personnelle, avec rendu d'albums en **3D**, lecteur audio persistant et support de l'écran de verrouillage mobile.
 
