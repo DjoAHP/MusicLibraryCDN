@@ -63,6 +63,7 @@ window.playGlobalTrack = function (
   );
 
   updateMiniPlayer();
+  updateMediaSession();
 };
 
 // Sauvegarder le temps de lecture régulièrement
@@ -87,6 +88,61 @@ function updateNavButtons() {
   const nextBtn = document.getElementById("mini-player-next");
   if (prevBtn) prevBtn.disabled = !window.globalPlayerNav.prev;
   if (nextBtn) nextBtn.disabled = !window.globalPlayerNav.next;
+}
+
+// ============================================
+// MEDIA SESSION API — Écran de verrouillage
+// ============================================
+function updateMediaSession() {
+  if (!("mediaSession" in navigator)) return;
+
+  const data = window.globalAudioData;
+
+  // Métadonnées affichées sur le lock screen
+  const artwork = data.cover
+    ? [
+        { src: data.cover, sizes: "256x256", type: "image/jpeg" },
+        { src: data.cover, sizes: "512x512", type: "image/jpeg" },
+      ]
+    : [];
+
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: data.title || "Lecture en cours",
+    artist: data.artist || "",
+    album: data.album || "",
+    artwork: artwork,
+  });
+
+  // Boutons du lock screen / écouteurs
+  navigator.mediaSession.setActionHandler("play", () => {
+    window.globalAudio.play();
+    navigator.mediaSession.playbackState = "playing";
+    updatePlayPauseButton();
+  });
+
+  navigator.mediaSession.setActionHandler("pause", () => {
+    window.globalAudio.pause();
+    navigator.mediaSession.playbackState = "paused";
+    updatePlayPauseButton();
+  });
+
+  navigator.mediaSession.setActionHandler("previoustrack", () => {
+    if (window.globalPlayerNav.prev) window.globalPlayerNav.prev();
+  });
+
+  navigator.mediaSession.setActionHandler("nexttrack", () => {
+    if (window.globalPlayerNav.next) window.globalPlayerNav.next();
+  });
+
+  navigator.mediaSession.setActionHandler("seekto", (details) => {
+    if (details.seekTime !== undefined) {
+      window.globalAudio.currentTime = details.seekTime;
+    }
+  });
+
+  navigator.mediaSession.playbackState = window.globalAudio.paused
+    ? "paused"
+    : "playing";
 }
 
 // Mettre à jour l'affichage du mini lecteur
@@ -321,10 +377,26 @@ document.addEventListener("DOMContentLoaded", function () {
   window.globalAudio.addEventListener("play", function () {
     updatePlayPauseButton();
     updateMiniProgress();
+    if ("mediaSession" in navigator)
+      navigator.mediaSession.playbackState = "playing";
   });
-  window.globalAudio.addEventListener("pause", updatePlayPauseButton);
+  window.globalAudio.addEventListener("pause", function () {
+    updatePlayPauseButton();
+    if ("mediaSession" in navigator)
+      navigator.mediaSession.playbackState = "paused";
+  });
   window.globalAudio.addEventListener("ended", updatePlayPauseButton);
-  window.globalAudio.addEventListener("timeupdate", updateMiniProgress);
+  window.globalAudio.addEventListener("timeupdate", function () {
+    updateMiniProgress();
+    // Mettre à jour la position de lecture sur le lock screen
+    if ("mediaSession" in navigator && window.globalAudio.duration) {
+      navigator.mediaSession.setPositionState({
+        duration: window.globalAudio.duration,
+        playbackRate: window.globalAudio.playbackRate,
+        position: window.globalAudio.currentTime,
+      });
+    }
+  });
   window.globalAudio.addEventListener("loadedmetadata", updateMiniProgress);
 
   // RESTAURER ET AUTO-PLAY

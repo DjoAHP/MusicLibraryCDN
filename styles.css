@@ -638,7 +638,7 @@ body.has-mini-player .page {
 /* RESPONSIVE — MOBILE (≤ 768px) */
 /* ============================================ */
 
-@media (max-width: 703px) {
+@media (max-width: 768px) {
 
     /* --- Bibliothèque --- */
     .library-container {
