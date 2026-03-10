@@ -300,3 +300,102 @@ body.has-mini-player {
     color: var(--accent-color);
     text-decoration-color: var(--accent-color);
 }
+
+/* ============================================
+   MINI PLAYER — RESPONSIVE MOBILE
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    :root {
+        --player-height: 120px;
+    }
+
+    /* Player fixé en bas — on réasserte position:fixed */
+    #mini-player {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: var(--player-height);
+        padding: 0;
+        display: flex;
+        align-items: stretch;
+    }
+
+    /* Deux lignes via flex-wrap */
+    .mini-player-main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 8px 14px 6px;
+        gap: 0;
+        column-gap: 10px;
+        row-gap: 4px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* === Ligne 1 : pochette + infos + controls === */
+    .mini-player-cover-wrapper {
+        order: 0;
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        border-radius: 5px;
+    }
+
+    .mini-player-info {
+        order: 1;
+        flex: 1;
+        min-width: 0;
+        width: auto;
+    }
+
+    #mini-player-title {
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+
+    #mini-player-artist {
+        font-size: 0.72rem;
+    }
+
+    .mini-player-controls {
+        order: 2;
+        flex-shrink: 0;
+        gap: 8px;
+    }
+
+    #mini-player-prev,
+    #mini-player-next {
+        width: 30px;
+        height: 30px;
+        font-size: 0.85rem;
+    }
+
+    #mini-player-play-pause {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+        padding-left: 2px;
+    }
+
+    /* === Ligne 2 : barre de progression sur toute la largeur === */
+    .mini-player-progress {
+        order: 3;
+        flex-basis: 100%;
+        width: 100%;
+        flex-grow: 0;
+        min-width: 0;
+        gap: 6px;
+        font-size: 0.7rem;
+        margin-top: 2px;
+    }
+
+    /* Volume masqué sur mobile */
+    .mini-player-volume {
+        display: none;
+    }
+}

@@ -271,6 +271,17 @@ html:has(.page) {
     perspective: 1000px;
 }
 
+/* Sur mobile, perspective casse position:fixed du mini-player */
+@media (max-width: 768px) {
+    html:has(.page) {
+        perspective: none;
+    }
+
+    .page {
+        transform-style: flat;
+    }
+}
+
 .page {
     transform-style: preserve-3d;
     width: 100%;
@@ -573,6 +584,10 @@ body.has-mini-player .page {
 /* RESPONSIVE */
 /* ============================================ */
 
+/* ============================================ */
+/* RESPONSIVE — TABLETTE (≤ 1200px) */
+/* ============================================ */
+
 @media (max-width: 1200px) {
     .library-container {
         padding: 2rem 2rem;
@@ -588,7 +603,7 @@ body.has-mini-player .page {
         min-height: 100dvh;
         overflow-y: auto;
         padding: 6rem 2rem 2rem;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     body.has-mini-player .page {
@@ -596,6 +611,7 @@ body.has-mini-player .page {
         height: auto;
         padding-bottom: 2rem;
     }
+
 
     #album-container {
         --album-size: 60vw;
@@ -618,31 +634,195 @@ body.has-mini-player .page {
     }
 }
 
+/* ============================================ */
+/* RESPONSIVE — MOBILE (≤ 768px) */
+/* ============================================ */
+
 @media (max-width: 768px) {
+
+    /* --- Bibliothèque --- */
     .library-container {
-        padding: 1.5rem 1rem;
+        padding: 1rem 0.75rem 1.5rem;
     }
 
     .library-header {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+        padding-top: 1rem;
     }
 
     .library-header h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: -0.5px;
     }
 
-    #mini-player {
-        padding: 1rem 1.5rem;
-        height: 90px;
+    .subtitle {
+        font-size: 1rem;
     }
 
-    .mini-player-controls {
-        right: 1.5rem;
+    /* Bouton Mes Vinyles : plus petit, moins intrusif */
+    .vinyl-link-btn {
+        top: 1rem;
+        right: 0.75rem;
+        width: 70px;
+        padding: 0.5rem 0.5rem;
+        gap: 0.2rem;
     }
 
-    #mini-player-play-pause {
-        width: 50px;
-        height: 50px;
+    .vinyl-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .vinyl-label {
+        font-size: 0.42rem;
+    }
+
+    /* Bouton retour : plus compact */
+    .back-button,
+    .back-button-player {
+        padding: 0.65rem 1rem;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+
+    /* Page lecteur : hauteur fixe — MODIFIEZ les valeurs ci-dessous pour ajuster */
+    .page {
+        flex-direction: column;
+        height: calc(100dvh - 190px) !important;
+        /* ← augmentez 190px pour raccourcir */
+        max-height: calc(100dvh - 190px) !important;
+        min-height: unset !important;
+        overflow: hidden !important;
+        overflow-y: hidden !important;
+        padding: 0.75rem 1rem 0;
+        gap: 0;
+        align-items: stretch;
+    }
+
+    /* Header retour */
+    .player-header {
+        padding: 0.5rem 0 0.25rem;
+        flex-shrink: 0;
+    }
+
+    /* Section album : ligne horizontale compacte */
+    .album-section {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem 0;
+        flex-shrink: 0;
+    }
+
+    /* Album 3D : petit carré à gauche */
+    #album-container {
+        --album-size: 100px !important;
+        max-width: 100px !important;
+        max-height: 100px !important;
+        flex-shrink: 0;
+        animation: floatRotateMobile 10s ease-in-out infinite;
+    }
+
+    @keyframes floatRotateMobile {
+
+        0%,
+        100% {
+            transform: rotateY(-8deg) rotateX(-3deg);
+        }
+
+        50% {
+            transform: rotateY(8deg) rotateX(3deg);
+        }
+    }
+
+    /* Infos album à droite */
+    .album-info {
+        text-align: left;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .artist-name {
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+        margin-bottom: 0.25rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .album-name {
+        font-size: 0.85rem;
+        color: #aaa;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Playlist : seule zone scrollable, prend toute la hauteur restante */
+    .music-player {
+        flex: 1;
+        min-height: 0;
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding-bottom: 0.5rem;
+    }
+
+    .playlist {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        border-radius: 12px;
+        padding: 0.25rem;
+        scrollbar-width: thin;
+        scrollbar-color: #9E7FFF rgba(255, 255, 255, 0.05);
+    }
+
+    .track-list li {
+        padding: 0.75rem 0.75rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.15rem;
+        border-radius: 8px;
+        /* Pas de translation sur mobile (trop d'espace perdu) */
+    }
+
+    .track-list li:hover {
+        transform: none;
+    }
+
+    .track-number {
+        min-width: 1.6rem;
+        font-size: 0.8rem;
+    }
+
+    .track-duration {
+        font-size: 0.75rem;
+    }
+}
+
+/* ============================================ */
+/* RESPONSIVE — TRÈS PETIT MOBILE (≤ 380px) */
+/* ============================================ */
+
+@media (max-width: 380px) {
+    .library-header h1 {
         font-size: 1.5rem;
+    }
+
+    .artist-name {
+        font-size: 0.95rem;
+    }
+
+    .album-name {
+        font-size: 0.75rem;
+    }
+
+    #album-container {
+        --album-size: 80px !important;
+        max-width: 80px !important;
+        max-height: 80px !important;
     }
 }
