@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
     "checkJs": false,
-    "target": "ES6"
+    "target": "ES6",
+    "module": "none",
+    "lib": ["ES6", "DOM"],
+    "maxNodeModuleJsDepth": 0
   },
-  "include": ["*.js", "src/**/*.js"],
-  "exclude": ["node_modules", "dist", "build", "*.min.js"]
+  "include": ["app.js", "music-data.js", "global-player.js"],
+  "exclude": ["node_modules", "artists"]
 }
