@@ -124,7 +124,7 @@ function renderArtistsView() {
   return `
     <div class="library-container">
       <header class="library-header">
-        <a href="https://vinylstack.base44.app" target="_blank" rel="noopener" class="vinyl-link-btn">
+        <a href="https://vinylstack-ahp.netlify.app/" target="_blank" rel="noopener" class="vinyl-link-btn">
           <span class="vinyl-icon">🎵</span>
           <span class="vinyl-label">Mes Vinyles</span>
         </a>
