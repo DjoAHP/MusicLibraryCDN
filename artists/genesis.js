@@ -70,28 +70,28 @@ window.addArtist({
       albumOffset: "2em",
       tracks: [
         {
-          title: "Looking For Someone",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1970%20-%20Trespass/01.%20Looking%20For%20Someone.mp3",
+          title: "Watcher Of The Skies",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/01.%20Watcher%20Of%20The%20Skies.mp3",
         },
         {
-          title: "White Mountain",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1970%20-%20Trespass/02.%20White%20Mountain.mp3",
+          title: "Time Table",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/02.%20Time%20Table.mp3",
         },
         {
-          title: "Visions Of Angels",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1970%20-%20Trespass/03.%20Visions%20Of%20Angels.mp3",
+          title: "Get 'Em Out By Friday",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/03.%20Get%20'Em%20Out%20By%20Friday.mp3",
         },
         {
-          title: "Stagnation",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1970%20-%20Trespass/04.%20Stagnation.mp3",
+          title: "Can-utility And The Coastliners",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/04.%20Can-utility%20And%20The%20Coastliners.mp3",
         },
         {
-          title: "Dusk",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1970%20-%20Trespass/05.%20Dusk.mp3",
+          title: "Horizons",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/05.%20Horizons.mp3",
         },
         {
-          title: "The Knife",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1970%20-%20Trespass/06.%20The%20Knife.mp3",
+          title: "Supper's Ready",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/06.%20Supper's%20Ready.mp3",
         },
       ],
     },
