@@ -4,7 +4,7 @@
 
 // Nom du cache — change ce nom si tu modifies des fichiers
 // (ça force le téléphone à télécharger la nouvelle version)
-const CACHE_NAME = "musiclibrary-v1";
+const CACHE_NAME = "musiclibrary-v1.0.2";
 
 // ============================================
 // FICHIERS A METTRE EN CACHE

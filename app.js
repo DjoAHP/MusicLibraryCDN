@@ -250,8 +250,8 @@ function initPlayer() {
     albumOffset: "2em",
     pageTop: "6em",
     pageBottom: "6em",
-    albumX: "500px", // horizontal
-    albumY: "300px", // vertical
+    albumX: "500px",
+    albumY: "300px",
   });
 
   // Créer la playlist
@@ -271,14 +271,13 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
     albumOffset = "0em",
     pageTop = "6em",
     pageBottom = "6em",
-    albumX = "0px", // horizontal
-    albumY = "0px", // vertical
+    albumX = "0px",
+    albumY = "0px",
   } = options;
 
   const albumContainer = document.getElementById("album-container");
   if (!albumContainer) return;
 
-  // Mettre à jour les variables CSS pour position et taille
   albumContainer.style.setProperty("--album-size", size);
   albumContainer.style.setProperty("--album-offset", albumOffset);
   albumContainer.style.setProperty("--album-x", albumX);
@@ -287,9 +286,9 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
   document.documentElement.style.setProperty("--page-top", pageTop);
   document.documentElement.style.setProperty("--page-bottom", pageBottom);
 
-  // MON LIEN CDN
   const BASE_URL =
     "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.60/images/";
+
   function generateImageUrl(name, callback) {
     const webpUrl = `${BASE_URL}${cdnPath}/${name}.webp`;
     const jpgUrl = `${BASE_URL}${cdnPath}/${name}.jpg`;
@@ -300,7 +299,6 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
     img.src = webpUrl;
   }
 
-  // Récupère toutes les layers
   const layers = [...albumContainer.querySelectorAll("div")];
   const images = [];
 
@@ -315,7 +313,6 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
     images.push({ el, name: el.id, depth });
   });
 
-  // Création des shadows
   images.forEach((frontLayer, i) => {
     images.slice(i + 1).forEach((backLayer) => {
       const shadow = document.createElement("div");
@@ -323,7 +320,6 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
       generateImageUrl(backLayer.name, (url) => {
         shadow.style.backgroundImage = url;
       });
-
       shadow.style.setProperty(
         "--blur",
         `${(backLayer.depth - frontLayer.depth) / 8}em`,
@@ -358,7 +354,9 @@ function setupMusicPlayer(
   const list = document.getElementById(`track-list-${albumId}`);
   if (!list) return;
 
-  let current = -1;
+  // Index de la piste en cours dans CET album
+  // Stocké dans un objet pour être partagé entre closures sans risque de capture
+  const state = { current: -1 };
 
   const durationCache = window._durationCache || (window._durationCache = {});
 
@@ -374,8 +372,8 @@ function setupMusicPlayer(
     list.appendChild(li);
 
     if (durationCache[track.url]) {
-      document.getElementById(durationId).textContent =
-        durationCache[track.url];
+      const el = document.getElementById(durationId);
+      if (el) el.textContent = durationCache[track.url];
     } else {
       const tempAudio = new Audio();
       tempAudio.preload = "metadata";
@@ -391,7 +389,7 @@ function setupMusicPlayer(
   });
 
   function play(index) {
-    current = index;
+    state.current = index;
     const track = tracks[index];
 
     document.querySelectorAll(`#track-list-${albumId} li`).forEach((li, i) => {
@@ -409,9 +407,11 @@ function setupMusicPlayer(
     );
 
     // Mettre à jour les fonctions de navigation globales
-    window.globalPlayerNav.prev = current > 0 ? () => play(current - 1) : null;
+    // On utilise state.current pour que prev/next lisent toujours la valeur à jour
+    window.globalPlayerNav.prev =
+      state.current > 0 ? () => play(state.current - 1) : null;
     window.globalPlayerNav.next =
-      current < tracks.length - 1 ? () => play(current + 1) : null;
+      state.current < tracks.length - 1 ? () => play(state.current + 1) : null;
 
     // Rafraîchir l'état des boutons dans le mini player
     if (typeof updateNavButtons === "function") updateNavButtons();
@@ -426,15 +426,13 @@ function setupMusicPlayer(
       const activeIndex = tracks.findIndex((t) => t.url === saved.url);
       if (activeIndex === -1) return;
 
-      // Marquer visuellement la piste active
-      current = activeIndex;
+      state.current = activeIndex;
       document
         .querySelectorAll(`#track-list-${albumId} li`)
         .forEach((li, i) => {
           li.classList.toggle("active", i === activeIndex);
         });
 
-      // Scroll vers la piste active si elle est hors vue
       const activeLi = list.querySelectorAll("li")[activeIndex];
       if (activeLi) {
         activeLi.scrollIntoView({ block: "nearest", behavior: "smooth" });
@@ -442,9 +440,12 @@ function setupMusicPlayer(
 
       // Rebrancher la navigation prev/next pour cet album
       window.globalPlayerNav.prev =
-        current > 0 ? () => play(current - 1) : null;
+        state.current > 0 ? () => play(state.current - 1) : null;
       window.globalPlayerNav.next =
-        current < tracks.length - 1 ? () => play(current + 1) : null;
+        state.current < tracks.length - 1
+          ? () => play(state.current + 1)
+          : null;
+
       if (typeof updateNavButtons === "function") updateNavButtons();
     } catch (e) {
       // Silencieux — pas bloquant
@@ -453,23 +454,8 @@ function setupMusicPlayer(
 
   restoreActiveTrack();
 
-  // Piste suivante automatique à la fin
-  const endedHandler = function () {
-    if (current < tracks.length - 1) {
-      play(current + 1);
-    }
-  };
-
-  // S'assurer qu'il n'y a qu'un seul écouteur 'ended'
-  if (window.globalAudio._currentEndedHandler) {
-    window.globalAudio.removeEventListener(
-      "ended",
-      window.globalAudio._currentEndedHandler,
-    );
-  }
-
-  window.globalAudio.addEventListener("ended", endedHandler);
-  window.globalAudio._currentEndedHandler = endedHandler;
+  // NOTE : Le gestionnaire "ended" est maintenant dans global-player.js
+  // et délègue à window.globalPlayerNav.next — rien à ajouter ici.
 }
 
 // =========================================

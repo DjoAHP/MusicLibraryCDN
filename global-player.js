@@ -23,6 +23,18 @@ if (!window.globalPlayerNav) {
   };
 }
 
+// ============================================
+// DÉTECTION DU TYPE D'IMAGE (pour Media Session)
+// ============================================
+function getImageMimeType(url) {
+  if (!url) return "image/jpeg";
+  const lower = url.toLowerCase();
+  if (lower.includes(".png")) return "image/png";
+  if (lower.includes(".webp")) return "image/webp";
+  if (lower.includes(".svg")) return "image/svg+xml";
+  return "image/jpeg"; // par défaut
+}
+
 // Fonction pour lire une piste globalement
 window.playGlobalTrack = function (
   trackUrl,
@@ -36,7 +48,9 @@ window.playGlobalTrack = function (
   const audio = window.globalAudio;
 
   audio.src = trackUrl;
-  audio.play();
+  audio.play().catch((err) => {
+    console.warn("[Player] Erreur lecture :", err);
+  });
 
   // Mettre à jour les infos
   window.globalAudioData.title = title;
@@ -91,6 +105,24 @@ function updateNavButtons() {
 }
 
 // ============================================
+// PASSAGE AUTOMATIQUE À LA PISTE SUIVANTE
+// ============================================
+// UN SEUL gestionnaire "ended" enregistré UNE SEULE FOIS ici,
+// qui délègue à window.globalPlayerNav.next — plus de conflits
+window.globalAudio.addEventListener("ended", function () {
+  console.log("[Player] Piste terminée, passage à la suivante...");
+  if (typeof window.globalPlayerNav.next === "function") {
+    // Petit délai pour laisser le système audio se stabiliser
+    // (évite les coupures aléatoires sur mobile verrouillé)
+    setTimeout(() => {
+      if (typeof window.globalPlayerNav.next === "function") {
+        window.globalPlayerNav.next();
+      }
+    }, 300);
+  }
+});
+
+// ============================================
 // MEDIA SESSION API — Écran de verrouillage
 // ============================================
 function updateMediaSession() {
@@ -98,11 +130,12 @@ function updateMediaSession() {
 
   const data = window.globalAudioData;
 
-  // Métadonnées affichées sur le lock screen
+  // Artwork avec le bon type MIME détecté automatiquement
+  const mimeType = getImageMimeType(data.cover);
   const artwork = data.cover
     ? [
-        { src: data.cover, sizes: "256x256", type: "image/jpeg" },
-        { src: data.cover, sizes: "512x512", type: "image/jpeg" },
+        { src: data.cover, sizes: "256x256", type: mimeType },
+        { src: data.cover, sizes: "512x512", type: mimeType },
       ]
     : [];
 
@@ -115,7 +148,7 @@ function updateMediaSession() {
 
   // Boutons du lock screen / écouteurs
   navigator.mediaSession.setActionHandler("play", () => {
-    window.globalAudio.play();
+    window.globalAudio.play().catch(() => {});
     navigator.mediaSession.playbackState = "playing";
     updatePlayPauseButton();
   });
@@ -127,11 +160,15 @@ function updateMediaSession() {
   });
 
   navigator.mediaSession.setActionHandler("previoustrack", () => {
-    if (window.globalPlayerNav.prev) window.globalPlayerNav.prev();
+    if (typeof window.globalPlayerNav.prev === "function") {
+      window.globalPlayerNav.prev();
+    }
   });
 
   navigator.mediaSession.setActionHandler("nexttrack", () => {
-    if (window.globalPlayerNav.next) window.globalPlayerNav.next();
+    if (typeof window.globalPlayerNav.next === "function") {
+      window.globalPlayerNav.next();
+    }
   });
 
   navigator.mediaSession.setActionHandler("seekto", (details) => {
@@ -292,7 +329,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (playPauseBtn) {
     playPauseBtn.onclick = function () {
       if (window.globalAudio.paused) {
-        window.globalAudio.play();
+        window.globalAudio.play().catch(() => {});
       } else {
         window.globalAudio.pause();
       }
@@ -305,13 +342,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (prevBtn) {
     prevBtn.onclick = function () {
-      if (window.globalPlayerNav.prev) window.globalPlayerNav.prev();
+      if (typeof window.globalPlayerNav.prev === "function") {
+        window.globalPlayerNav.prev();
+      }
     };
   }
 
   if (nextBtn) {
     nextBtn.onclick = function () {
-      if (window.globalPlayerNav.next) window.globalPlayerNav.next();
+      if (typeof window.globalPlayerNav.next === "function") {
+        window.globalPlayerNav.next();
+      }
     };
   }
 
@@ -321,7 +362,9 @@ document.addEventListener("DOMContentLoaded", function () {
     progressBar.onclick = function (e) {
       const rect = progressBar.getBoundingClientRect();
       const percent = (e.clientX - rect.left) / rect.width;
-      window.globalAudio.currentTime = percent * window.globalAudio.duration;
+      if (window.globalAudio.duration) {
+        window.globalAudio.currentTime = percent * window.globalAudio.duration;
+      }
     };
   }
 
@@ -385,7 +428,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if ("mediaSession" in navigator)
       navigator.mediaSession.playbackState = "paused";
   });
-  window.globalAudio.addEventListener("ended", updatePlayPauseButton);
   window.globalAudio.addEventListener("timeupdate", function () {
     updateMiniProgress();
     // Mettre à jour la position de lecture sur le lock screen
@@ -418,8 +460,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (data.isPlaying) {
           window.globalAudio
             .play()
-            .then(() => console.log("Lecture reprise automatiquement"))
-            .catch(() => console.log("Auto-play bloqué, cliquez sur play"));
+            .then(() => console.log("[Player] Lecture reprise automatiquement"))
+            .catch(() =>
+              console.log("[Player] Auto-play bloqué, cliquez sur play"),
+            );
         }
 
         updateMiniPlayer();
@@ -434,7 +478,7 @@ document.addEventListener("DOMContentLoaded", function () {
         updateMiniPlayer();
       }
     } catch (e) {
-      console.error("Erreur restauration:", e);
+      console.error("[Player] Erreur restauration:", e);
     }
   }
 });
