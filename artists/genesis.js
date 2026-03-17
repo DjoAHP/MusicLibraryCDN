@@ -70,28 +70,32 @@ window.addArtist({
       albumOffset: "2em",
       tracks: [
         {
-          title: "Watcher Of The Skies",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/01.%20Watcher%20Of%20The%20Skies.mp3",
+          title: "The Musical Box",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1971%20-%20Nursery%20Cryme/01.%20The%20Musical%20Box.mp3",
         },
         {
-          title: "Time Table",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/02.%20Time%20Table.mp3",
+          title: "For Absent Friends",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1971%20-%20Nursery%20Cryme/02.%20For%20Absent%20Friends.mp3",
         },
         {
-          title: "Get 'Em Out By Friday",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/03.%20Get%20'Em%20Out%20By%20Friday.mp3",
+          title: "The Return Of The Giant Hogweed",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1971%20-%20Nursery%20Cryme/03.%20The%20Return%20Of%20The%20Giant%20Hogweed.mp3",
         },
         {
-          title: "Can-utility And The Coastliners",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/04.%20Can-utility%20And%20The%20Coastliners.mp3",
+          title: "Seven Stones",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1971%20-%20Nursery%20Cryme/04.%20Seven%20Stones.mp3",
         },
         {
-          title: "Horizons",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/05.%20Horizons.mp3",
+          title: "Harold The Barrel",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1971%20-%20Nursery%20Cryme/05.%20Harold%20The%20Barrel.mp3",
         },
         {
-          title: "Supper's Ready",
-          url: "https://mymusiclibrary.github.io/genesis_part1/1972%20-%20Foxtrot/06.%20Supper's%20Ready.mp3",
+          title: "Harlequin",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1971%20-%20Nursery%20Cryme/06.%20Harlequin.mp3",
+        },
+        {
+          title: "The Fountain Of Salmacis",
+          url: "https://mymusiclibrary.github.io/genesis_part1/1971%20-%20Nursery%20Cryme/07.%20The%20Fountain%20Of%20Salmacis.mp3",
         },
       ],
     },
