@@ -1,0 +1,18 @@
+{
+    "name": "MusicLibrary",
+    "short_name": "MusicLib",
+    "description": "Ma bibliothèque musicale personnelle via CDN",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#171b2e",
+    "theme_color": "#171b2e",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ]
+}

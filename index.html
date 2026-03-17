@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="search-style.css">
     <link rel="stylesheet" href="global-player.css">
     <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1">
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#171b2e">
 </head>
 
 <body>
@@ -61,6 +64,16 @@
     <!-- SCRIPT -->
     <script src="global-player.js"></script>
     <script src="app.js"></script>
+    <!-- Enregistrement du Service Worker (PWA) -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("./sw.js")
+                    .then(() => console.log("[SW] Enregistré avec succès"))
+                    .catch((err) => console.error("[SW] Erreur :", err));
+            });
+        }
+    </script>
 </body>
 
 </html>

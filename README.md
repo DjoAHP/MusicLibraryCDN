@@ -74,6 +74,14 @@ Puis ajoute la ligne correspondante dans `index.html` :
 <script src="artists/nom-artiste.js"></script>
 ```
 
+## sw.js
+
+Penser a ajouter le nouvelle artiste dans le sw.js pour mettre a jour puis modifier la version:
+
+```javascript
+const CACHE_NAME = "musiclibrary-v1";
+```
+
 ---
 
 ## Album 3D
