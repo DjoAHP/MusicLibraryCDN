@@ -464,12 +464,12 @@ window.addArtist({
       // NOM albums DOIT ETRE EXACTEMENT COMME LE LIEN (projectName)
       id: "wind-&-wuthering",
       // NOM ALBUMS
-      name: "Wind & Wuthering",
+      name: "Wind and Wuthering",
       //   ANNEE
       year: "1976",
       cover:
         //   COVER ALBUM
-        "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20%26%20Wuthering/cover.jpg",
+        "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20and%20Wuthering/cover.jpg",
       // URL ALBUM 3D
       cdnPath: "Genesis/wind-&-wuthering/",
       //   NOM ALBUMS
@@ -479,39 +479,7 @@ window.addArtist({
       tracks: [
         {
           title: "Eleventh Earl of Mar",
-          url: "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20%26%20Wuthering/01.%20Eleventh%20Earl%20of%20Mar.mp3",
-        },
-        {
-          title: "One for the Vine",
-          url: "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20%26%20Wuthering/02.%20One%20for%20the%20Vine.mp3",
-        },
-        {
-          title: "Your Own Special Way",
-          url: "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20%26%20Wuthering/03.%20Your%20Own%20Special%20Way.mp3",
-        },
-        {
-          title: "Wot Gorilla",
-          url: "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20%26%20Wuthering/04.%20Wot%20Gorilla.mp3",
-        },
-        {
-          title: "All in a Mouse's Night",
-          url: "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20%26%20Wuthering/05.%20All%20in%20a%20Mouse's%20Night.mp3",
-        },
-        {
-          title: "Blood on the Rooftops",
-          url: "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20%26%20Wuthering/06.%20Blood%20on%20the%20Rooftops.mp3",
-        },
-        {
-          title: "Unquiet Slumbers for the Sleepers....",
-          url: "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20%26%20Wuthering/07.%20Unquiet%20Slumbers%20for%20the%20Sleepers....mp3",
-        },
-        {
-          title: "...in That Quiet Earth",
-          url: "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20%26%20Wuthering/08.%20...in%20That%20Quiet%20Earth.mp3",
-        },
-        {
-          title: "Afterglow",
-          url: "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20%26%20Wuthering/09.%20Afterglow.mp3",
+          url: "https://mymusiclibrary.github.io/genesis_part2/1976%20-%20Wind%20and%20Wuthering/01.%20Eleventh%20Earl%20of%20Mar.mp3",
         },
       ],
     },
