@@ -287,7 +287,7 @@ function render3DAlbum(cdnPath, projectName, options = {}) {
   document.documentElement.style.setProperty("--page-bottom", pageBottom);
 
   const BASE_URL =
-    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.63/images/";
+    "https://cdn.jsdelivr.net/gh/DjoAHP/cdn-ressources-albums@v1.1.64/images/";
 
   function generateImageUrl(name, callback) {
     const webpUrl = `${BASE_URL}${cdnPath}/${name}.webp`;

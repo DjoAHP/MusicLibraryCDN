@@ -336,7 +336,7 @@ window.addArtist({
       ],
     },
     // :::::::::::::::::: ------------ ::::::::::::::::::
-    // :::::::::::::::::::: The Lamb Lies Down On Broadway CD1 :::::::::::::::::::::::
+    // :::::::::::::::::::: The Lamb Lies Down On Broadway CD2 :::::::::::::::::::::::
     {
       // NOM albums DOIT ETRE EXACTEMENT COMME LE LIEN (projectName)
       id: "the-lamb-lies-down-on-broadway",
